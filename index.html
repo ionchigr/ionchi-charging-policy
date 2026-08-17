@@ -1412,9 +1412,18 @@ let curTab="sub", kw="";
 const EMPTY=document.getElementById("empty");
 function uniq(arr){return["全部",...new Set(arr.filter(Boolean).sort())]}
 function opt(sel,arr){sel.innerHTML=arr.map(c=>`<option>${c}</option>`).join("")}
-opt(document.getElementById("c-sub"),uniq(DATA.sub.map(i=>i.city)));
-opt(document.getElementById("c-mgmt"),uniq(DATA.mgmt.map(i=>i.city)));
-opt(document.getElementById("c-ba"),uniq(DATA.ba.map(i=>i.city)));
+function fillCity(tab){
+  const lv=document.getElementById("lv-"+tab);let lvv="";
+  if(lv){const on=lv.querySelector("span.on");if(on)lvv=on.dataset.v}
+  const sel=document.getElementById("c-"+tab);
+  let arr=uniq(DATA[tab].map(i=>i.city));
+  if(lvv==="省")arr=arr.filter(c=>c==="全部"||lvlOf(c)==="省");
+  else if(lvv==="市")arr=arr.filter(c=>c==="全部"||lvlOf(c)==="市");
+  sel.innerHTML=arr.map(c=>`<option>${c}</option>`).join("");
+}
+fillCity("sub");
+fillCity("mgmt");
+fillCity("ba");
 document.getElementById("tabs").addEventListener("click",e=>{
   const t=e.target.closest(".tab");if(!t)return;curTab=t.dataset.t;
   document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===t));
@@ -1425,7 +1434,7 @@ document.querySelectorAll(".seg").forEach(seg=>{
   seg.addEventListener("click",e=>{
     const s=e.target.closest("span");if(!s)return;
     seg.querySelectorAll("span").forEach(x=>x.classList.remove("on"));
-    s.classList.add("on");render(seg.dataset.tab||seg.id.replace("g-",""));
+    s.classList.add("on");const tb=seg.dataset.tab||seg.id.replace("g-","");if(seg.dataset.tab){fillCity(tb);document.getElementById("c-"+tb).value="全部";}render(tb);
   });
 });
 const LMAP={"\u4f4e":"b-low","\u4e2d":"b-mid","\u9ad8":"b-high"};
@@ -1452,7 +1461,7 @@ function filter(tab){
   const lv=document.getElementById("lv-"+tab);let lvv="";
   if(lv){const on=lv.querySelector("span.on");if(on)lvv=on.dataset.v}
   if(city&&city!=="全部"){const sel=expandSel(city);d=d.filter(i=>sel.includes(normCity(i.city)))}
-  if(lvv)d=d.filter(i=>lvlOf(i.city)===lvv);
+  else if(lvv)d=d.filter(i=>lvlOf(i.city)===lvv);
   if(kv)d=d.filter(i=>(seg.dataset.key==="level"?i.level:i[seg.dataset.key])===kv);}
   if(kw){const k=kw.toLowerCase();d=d.filter(i=>JSON.stringify(i).toLowerCase().includes(k))}
   return d;
