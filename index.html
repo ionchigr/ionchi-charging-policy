@@ -105,7 +105,1306 @@ footer a{color:var(--accent);text-decoration:none}
 </main>
 <footer>北京逸安启新能源科技有限公司 · 充电站政策要求信息流 · 仅供内部参考</footer>
 <script>
-const DATA = {"sub":[{"city":"全国","level":"/","req":"加强安全管理：充电站选址、建设必须严格执行国家标准","cat":"国务院文件","polname":"发改能源〔2025〕1250号 电动汽车充电设施服务能力“三年倍增”行动方案（2025—2027年）","url":"https://www.gov.cn/zhengce/zhengceku/202510/content_7044559.htm"},{"city":"全国","level":"/","req":"特殊建设工程，需开展特殊消防设计专家评审，且需进行消防验收","cat":"国务院文件","polname":"住建部 51 号令 建设工程消防设计审查验收管理暂行规定","url":"https://www.gov.cn/gongbao/content/2020/content_5528183.htm"},{"city":"全国","level":"/","req":"一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"国标","polname":"GB/T 50966-2024《电动汽车充电站设计标准》","url":"https://oss.jiaozuo.gov.cn/jiaozuo_zjj/ueditor/asp/upload/file/20250519/17476202682213819.pdf"},{"city":"全国","level":"/","req":"地下车库必须配齐：火灾自动报警、机械排烟、自动喷淋、消防应急疏散照明，缺任一系统不得建站。","cat":"国标","polname":"GB/T51313-2018《电动汽车分散充电设施工程技术标准》","url":"http://www.sifaenergy.cn/assets/files/GB-T51313-2018.pdf"},{"city":"全国","level":"/","req":"当地下一层不具备布置条件时，应布置在地下二层","cat":"征询意见稿","polname":"","url":"https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2026/art_11a3e3e9b98446119238fc5f01aa2a03.html"},{"city":"全国","level":"/","req":"（集中式）充换电站应独立设置，且不在地下设置","cat":"团标","polname":"T/CFPA 051—2026《电动汽车充换电站消防安全技术规范》","url":"http://www.cfpa.cn/uploads/home/enclosure/TCFPA%20051-2026%20%E7%94%B5%E5%8A%A8%E6%B1%BD%E8%BD%A6%E5%85%85%E6%8D%A2%E7%94%B5%E7%AB%99%E6%B6%88%E9%98%B2%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.pdf"},{"city":"上海市","level":"低","req":"优先地面，地下首选B1，并满足消防要求；\n禁止B4及以下；","cat":"地方要求","polname":"《上海市公共停车场（库）充电设施建设管理办法》","url":"https://jtw.sh.gov.cn/2023ngfxwj/20230215/352f94bfa17e47aa9b17da38e1458261.html"},{"city":"北京市","level":"低","req":"首先地上，如需设置在地下，宜布置在B1。禁止B4及以下","cat":"地方要求","polname":"《北京市新能源汽车高质量超级充电站技术导则》","url":"https://csglw.beijing.gov.cn/zwxx/2024zcwj/202501/t20250106_3981561.html"},{"city":"重庆市","level":"高","req":"地下禁止大功率充电站","cat":"地方要求","polname":"政策出具中，（新规）","url":""},{"city":"天津市","level":"低","req":"四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"参考国标","polname":"GB/T 50966-2024《电动汽车充电站设计标准》","url":"https://oss.jiaozuo.gov.cn/jiaozuo_zjj/ueditor/asp/upload/file/20250519/17476202682213819.pdf"},{"city":"浙江省","level":"低","req":"地下充电站成为不宜大于 12 辆，不应大于 18 辆","cat":"省级要求","polname":"浙江省消防技术规范难点问题操作技术指南","url":"https://zjjcmspublicnew.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/cms_files/filemanager/1568154/attach/202512/b16efc2531714a5da1cb3841da5e6bf5.pdf?fileName=%E6%B5%99%E6%B1%9F%E7%9C%81%E6%B6%88%E9%98%B2%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83%E9%9A%BE%E7%82%B9%E9%97%AE%E9%A2%98%E6%93%8D%E4%BD%9C%E6%8A%80%E6%9C%AF%E6%8C%87%E5%8D%97%EF%BC%882025%E5%B9%B4%E7%89%88%EF%BC%89.pdf"},{"city":"浙江省","level":"低","req":"一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"参考国标","polname":"浙江省新能源汽车充（换）电基础设施建设运营管理办法","url":"https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"},{"city":"杭州市","level":"低","req":"一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"参考国标","polname":"杭州市推进新能源电动汽车充电基础设施建设运营实施办法（修订）","url":"https://www.hangzhou.gov.cn/art/2023/11/16/art_1229063382_1838378.html"},{"city":"宁波市","level":"低","req":"一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"参考国标","polname":"浙江省新能源汽车充（换）电基础设施建设运营管理办法","url":"https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"},{"city":"广东省","level":"低","req":"四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；地下场站需消防验收","cat":"省级要求","polname":"DBJ/T 15-150-2018《电动汽车充电基础设施建设技术规程》","url":"https://www.foshan.gov.cn/attachment/0/578/578232/6905789.pdf"},{"city":"广东省","level":"低","req":"地下二、三层及以上集中超充无现行国标完整覆盖，必须开展省级消防专家评审论证。\n竣工后需组织消防验收","cat":"省级要求","polname":"广东省住房和城乡建设厅关于规范建设工程消防设计有关评审论证工作的通知","url":"https://www.lufengshi.gov.cn/zjj/zwgk/gzdt/content/post_1148161.html"},{"city":"深圳市","level":"高","req":"地下禁止大功率充电站","cat":"地方标准","polname":"新能源汽车地下停放场所消防安全管理规范","url":"https://www.sz.gov.cn/attachment/1/1491/1491519/11578943.pdf"},{"city":"广州市","level":"低","req":"四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；\n地下场站需消防验收","cat":"地方要求","polname":"DBJ/T 15-150-2018《电动汽车充电基础设施建设技术规程》","url":"https://www.foshan.gov.cn/attachment/0/578/578232/6905789.pdf"},{"city":"东莞市","level":"高","req":"地下禁止大功率充电站","cat":"地方要求","polname":"东莞市充换电基础设施规划设计、施工、运维安全管理技术规范","url":"https://www.ttbz.org.cn/upload/file/20230510/6381934291951018352053253.pdf"},{"city":"佛山市","level":"低","req":"四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；地下场站需消防验收","cat":"参考省标","polname":"佛山市物业管理区域新能源汽车充电设施安全建设管理指引（2025年修订）","url":"https://fszj.foshan.gov.cn/attachment/0/578/578380/6906357.pdf"},{"city":"汕头市（南澳县）","level":"低","req":"四级充电站宜设于B1靠近出入口,并满足验收要求；禁止B4及以下；","cat":"参考省标","polname":"南澳县新能源汽车充换电基础设施管理暂行办法","url":"https://www.shantou.gov.cn/cnst/ztzl/sthqbmzczt/naxrmzfmhwz/zcwj/content/post_2449417.html"},{"city":"江苏省","level":"中","req":"宜布置在B1，禁止B3及以下","cat":"地方要求","polname":"江苏省地下汽车库电动汽车停放充电区域安全管理规定(试行)","url":"https://www.yixing.gov.cn/doc/2024/12/04/1273691.shtml"},{"city":"苏州市","level":"中","req":"限B1","cat":"地方要求","polname":"江苏省地下汽车库电动汽车停放充电区域安全管理规定(试行)","url":"https://www.yixing.gov.cn/doc/2024/12/04/1273691.shtml"},{"city":"南京市","level":"中","req":"应布置在B1，确有困难时可布置在B2，不应布置在B3及以下","cat":"地方要求","polname":"南京市地下电动汽车库防火设计导则","url":"http://njtszx.cn/ueditor/php/upload/file/20240108/1704696658623960.pdf"},{"city":"无锡市","level":"中","req":"宜布置在B1，禁止B3及以下","cat":"地方要求","polname":"江苏省地下汽车库电动汽车停放充电区域安全管理规定(试行)","url":"https://www.yixing.gov.cn/doc/2024/12/04/1273691.shtml"},{"city":"南通市","level":"中","req":"宜布置在B1，禁止B3及以下","cat":"地方要求","polname":"江苏省地下汽车库电动汽车停放充电区域安全管理规定(试行)","url":"https://www.yixing.gov.cn/doc/2024/12/04/1273691.shtml"},{"city":"常州市","level":"高","req":"地下禁止大功率充电站","cat":"地方要求","polname":"加强地下电动汽车充电场所消防安全管理和建设意见（试行","url":"https://js.119.gov.cn/202410/jsxfww-menu-gzdt_c_6ddce7c1472047069fc2.html"},{"city":"成都市","level":"低","req":"执行国标：宜设于B1靠近出入口,禁止B4及以下\n地下功率大于1200kW制增加三道安全评价手续","cat":"地方标准","polname":"电动汽车充电设施消防安全规范","url":"https://dbba.sacinfo.org.cn/attachment/onlineRead/f41a3e0f409a1553f76917222e52a15bc37357fe38273058c518b4fb6d33cc65?file=%2Fportal%2Fdownload%2Ff41a3e0f409a1553f76917222e52a15bc37357fe38273058c518b4fb6d33cc65#zoom=auto&disablerange=true&disablestream=true&disableautofetch=true"},{"city":"全国","level":"低","req":"","cat":"地方要求","polname":"《成都市电动汽车充电设施建设运营管理办法》","url":"https://cdjx.chengdu.gov.cn/cdsjxw/c132872/2023-01/05/cdd1f91f981b422b8481acabc25f91bc/files/35fc34bdaf374ac183b411c9d5d80fb0.pdf"},{"city":"福建省","level":"低","req":"宜布置在B1","cat":"地方要求","polname":"福建省电动汽车充电基础设施建设技术规程","url":"https://zjt.fujian.gov.cn/xxgk/zfxxgkzl/xxgkml/dfxfgzfgzhgfxwj/jskj_3794/201803/P020180612710149618627.pdf"},{"city":"福建省","level":"低","req":"宜布置在B1，禁止B4及以下","cat":"地方要求","polname":"福建省房屋建筑工程消防设计技术审查疑难问题解答（2025年版）","url":"https://zjt.fujian.gov.cn/xxgk/zfxxgkzl/xxgkml/dfxfgzfgzhgfxwj/qt_3796/202504/t20250421_6902692.htm"},{"city":"厦门市","level":"低","req":"宜布置在B1","cat":"地方要求","polname":"福建省电动汽车充电基础设施建设技术规程","url":"https://zjt.fujian.gov.cn/xxgk/zfxxgkzl/xxgkml/dfxfgzfgzhgfxwj/jskj_3794/201803/P020180612710149618627.pdf"},{"city":"福州市","level":"高","req":"地下禁止大功率充电站","cat":"地方要求","polname":"福州市电动车充电设施消防设计导则","url":"https://www.fuzhou.gov.cn/zwgk/zxwj/bmwj_1/202302/P020230209530346307576.pdf"},{"city":"泉州市","level":"低","req":"宜布置在B1，禁止B4及以下","cat":"地方要求","polname":"《泉州中心市区公共充电基础设施布局专项规划(2023-2030年)》","url":"https://fgw.quanzhou.gov.cn/zwgk/zfxxgkzl/xxgkml/ghjh/202403/t20240307_3011971.htm"},{"city":"山东省","level":"中","req":"宜布置在B1，禁止B3及以下","cat":"地方要求","polname":"汽车库设计防火标准","url":"http://zjt.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=4f443d3ec86848dcb68cca6e58ddc17b.pdf"},{"city":"山东省","level":"中","req":"特殊建设工程，需开展特殊消防设计专家评审，且需进行消防验收","cat":"地方要求","polname":"山东省特殊消防设计专家评审办法","url":"http://zjt.shandong.gov.cn/art/2024/9/2/art_293162_69723.html"},{"city":"青岛市","level":"中","req":"宜布置在B1，禁止B3及以下","cat":"地方要求","polname":"汽车库设计防火标准","url":"http://zjt.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=4f443d3ec86848dcb68cca6e58ddc17b.pdf"},{"city":"济南市","level":"中","req":"宜布置在B1，禁止B3及以下","cat":"地方要求","polname":"汽车库设计防火标准","url":"http://zjt.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=4f443d3ec86848dcb68cca6e58ddc17b.pdf"},{"city":"湖南省","level":"高","req":"要求备案及验收（CMA、消防、排雷）","cat":"地方要求","polname":"湖南省电动汽车充换电基础设施建设与运营管理办法","url":"https://fgw.hunan.gov.cn/fgw/xxgk_70899/zcfg/dfxfg/202506/t20250603_33689945.html"},{"city":"湖南省","level":"高","req":"地下禁止大功率充电站","cat":"地方要求","polname":"湖南省电动汽车充电设施设计标准","url":"https://ebook.chinabuilding.com.cn/zbooklib/bookpdf/probation?SiteID=1&bookID=135505"},{"city":"长沙市","level":"高","req":"地下禁止大功率充电站","cat":"地方要求","polname":"湖南省电动汽车充电设施设计标准","url":"https://ebook.chinabuilding.com.cn/zbooklib/bookpdf/probation?SiteID=1&bookID=135505"},{"city":"武汉市","level":"低","req":"四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"地方要求","polname":"武汉市新能源汽车充电基础设施建设运营管理暂行办法","url":"https://fgw.wuhan.gov.cn/zfxxgk/zfxxgk_1/qtzdgkwj/202109/t20210902_1771228.html"},{"city":"西安市","level":"低","req":"优先建设在地面\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"地方要求","polname":"西安市储能电站、综合能源服务站和大功率充电设施布局规划蓝皮书（2026-2030年）","url":"https://xadrc.xa.gov.cn/xxgk/ghjh/zcqfzgh/2039544454241681409.html"},{"city":"郑州市","level":"低","req":"四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"地方要求","polname":"河南省电动汽车充电基础设施建设运营管理暂行办法","url":"https://www.henan.gov.cn/2025/09-08/3209668.html"},{"city":"合肥市","level":"低","req":"四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"参考国标","polname":"安徽省新能源汽车充换电基础设施建设运营管理办法","url":"https://fzggw.ah.gov.cn/public/7011/148994031.html"},{"city":"辽宁省","level":"低","req":"一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"参考国标","polname":"辽宁省“十四五”电动汽车充电基础设施专项规划","url":"https://www.ln.gov.cn/web/zwgkx/lnsrmzfgb/2022n/zk/zk22/bmwj/59A3E4B0F1D0415C8A8D5CF9AF7AC9ED/index.shtml"},{"city":"沈阳市","level":"低","req":"一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"参考国标","polname":"沈阳市新能源汽车充电基础设施建设运营管理暂行办法","url":"https://sfj.shenyang.gov.cn/flfggz/gfxwj/202202/P020220214509063125337.pdf"},{"city":"大连市","level":"低","req":"一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"参考国标","polname":"辽宁省“十四五”电动汽车充电基础设施专项规划","url":"https://www.ln.gov.cn/web/zwgkx/lnsrmzfgb/2022n/zk/zk22/bmwj/59A3E4B0F1D0415C8A8D5CF9AF7AC9ED/index.shtml"},{"city":"昆明市","level":"低","req":"一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"参考国标","polname":"云南省电动汽车充电基础设施建设运营管理暂行办法","url":"https://www.yn.gov.cn/zwgk/zfgb/2019/2019d21q/sjbmwj/201912/t20191230_186423.html"},{"city":"南昌市","level":"高","req":"地下禁止大功率充电站","cat":"地方要求","polname":"江西省电动汽车充电设施建设技术标准","url":"https://zjt.jiangxi.gov.cn/jxszfhcxjst/bzcx/1765719271123120128/bULzGoTi.pdf"},{"city":"贵阳市","level":"低","req":"一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"参考国标","polname":"省加快新能源汽车产业高质量发展推进 “电动贵州” 建设的指导意见","url":"https://www.guizhou.gov.cn/zwgk/zcfg/szfwj/qfbf/202310/t20231027_82882627.html"},{"city":"南宁市","level":"低","req":"一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"参考国标","polname":"广西电动汽车充电基础设施建设运营管理办法","url":"http://fgw.gxzf.gov.cn/zfxxgkzl/wjzx/zyzc/zdyj/P020260109615143910158.pdf"},{"city":"海口市","level":"低","req":"宜布置在B1，禁止B4及以下","cat":"地方要求","polname":"海南省电动汽车充电设施建设技术标准","url":"https://zjt.hainan.gov.cn/szjt/0410/202203/f5e4b5b17fc54b70bb7f293bb7c0de2f/files/a9f0bf84adb443c7853421b2a0b93aa0.pdf"},{"city":"石家庄市","level":"中","req":"充电站不宜设置于地下，如需设置于地下，应采取相应的防火措施。","cat":"地方要求","polname":"电动汽车充电站及充电桩建设技术标准","url":"https://www.soujianzhu.cn/NormAndRules/RulesContent.aspx?id=798"},{"city":"太原市","level":"低","req":"一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；","cat":"参考国标","polname":"山西省电动汽车充（换）电基础设施建设运营管理办法","url":"https://www.shanxi.gov.cn/zfxxgk/zfcbw/zfgb2/2023nzfgb/d6q_76599/szfbgtwj_77853/202305/t20230516_8560553.shtml"}],"mgmt":[{"city":"国家级","year":"2023","status":"现行有效","title":"国务院办公厅《关于进一步构建高质量充电基础设施体系的指导意见》","sum":"国家层面充电基础设施体系建设的纲领性文件，各级管理办法的上位依据。","link":"https://www.gov.cn/zhengce/content/202306/content_6887167.htm"},{"city":"国家级","year":"2025","status":"现行有效","title":"六部门《电动汽车充电设施服务能力三年倍增行动方案（2025—2027年）》","sum":"发改委、能源局、工信部、住建部、交通部、市场监管总局联合印发。","link":"https://www.ndrc.gov.cn/xxgk/jd/jd/202510/t20251015_1401015.html"},{"city":"国家级","year":"2026","status":"现行有效","title":"《新型电力系统建设十五五规划》充电目标","sum":"2030年充电桩超4000万个、大功率约30万个，支撑超1.1亿辆电车。","link":"https://www.gov.cn/zhengce/202608/content_7077537.htm"},{"city":"国家级","year":"2024","status":"现行有效","title":"财政部等《县域充换电设施补短板试点通知》财建〔2024〕57号","sum":"聚焦县域补短板，推动充换电设施向县乡覆盖。","link":"https://www.gov.cn/zhengce/zhengceku/202404/content_6945040.htm"},{"city":"国家级","year":"2025","status":"现行有效","title":"发改委《促进大功率充电设施科学规划建设》发改办能源〔2025〕632号","sum":"鼓励场站10年以上租赁期限，电网加强大功率充电用电保障。","link":"https://www.zgdlxh.com/page121.html?article_id=2357&pagenum=2"},{"city":"国家级","year":"2026","status":"现行有效","title":"五部门2026年新能源汽车下乡活动","sum":"乡村换购可申领以旧换新补贴，推动光储充、车网互动下乡。","link":"https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_addcc0a2fd3f4bf6993e3e48f7b8d4c3.html"},{"city":"国家级","year":"2026","status":"现行有效","title":"电动汽车供电设备CCC强制认证（8月1日起）","sum":"交流/直流桩、随车充电装置纳入CCC强制认证，配套GB 39752/44263。","link":"https://finance.eastmoney.com/a/202608013829030617.html"},{"city":"浙江","year":"2024","status":"现行有效","title":"浙江省《新能源汽车充换电基础设施建设运营管理办法》浙发改能源〔2024〕243号","sum":"省级充换电设施建设运营框架性文件。","link":"https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"},{"city":"江苏","year":"2022","status":"现行有效","title":"江苏省《新能源汽车充换电设施建设运营管理办法》苏工信规〔2022〕2号","sum":"既有车位安装充电桩按一般电气设备管理，可不办理项目备案。","link":"https://www.jiangsu.gov.cn/art/2022/3/31/art_64797_10399100.html"},{"city":"山东","year":"2016+2023","status":"现行有效","title":"山东省《电动汽车充电设施建设运营管理办法》+ 2023年加强规范实施意见","sum":"2016年印发管理办法（鲁发改能源〔2016〕1182号），2023年省能源局配套出台《关于进一步加强和规范山东省电动汽车充电基础设施建设运营管理的实施意见》，现行有效。","link":"http://www.shandong.gov.cn/art/2023/7/25/art_123000_30408.html"},{"city":"河南","year":"2025","status":"现行有效","title":"河南省《电动汽车充电基础设施建设运营管理暂行办法》豫政办〔2025〕43号","sum":"2025年9月印发，现行有效。","link":"https://www.henan.gov.cn/2025/09-08/3209668.html"},{"city":"湖南","year":"2025","status":"现行有效","title":"湖南省《电动汽车充换电基础设施建设与运营管理办法》湘发改能源规〔2025〕289号","sum":"时效至2030-05-27，现行有效。","link":"https://fgw.hunan.gov.cn/fgw/xxgk_70899/zcfg/dfxfg/202506/t20250603_33689945.html"},{"city":"陕西","year":"2024","status":"现行有效","title":"陕西省《电动汽车充电基础设施建设运营管理办法》陕发改能电力〔2024〕952号","sum":"2024年12月印发，替代2018版（5年期满）。","link":"https://www.shaanxi.gov.cn/zfxxgk/zfgb/2024/d23q/202412/t20241226_3273739_wap.html"},{"city":"安徽","year":"2023","status":"现行有效","title":"安徽省《新能源汽车充换电基础设施建设运营管理办法（暂行）》皖发改产业规〔2023〕8号","sum":"2023年12月印发，现行有效。","link":"https://fzggw.ah.gov.cn/public/7011/148994031.html"},{"city":"河北","year":"2016","status":"暂行","title":"河北省《电动汽车充电基础设施建设运营管理办法（暂行）》冀发改能源〔2016〕539号","sum":"2016年暂行办法。","link":"https://hbdrc.hebei.gov.cn/xxgk_2232/zc/wzcwj/202309/t20230907_91838.html"},{"city":"四川","year":"2023","status":"现行有效","title":"四川省《充电基础设施建设运营管理办法》川发改能源规〔2023〕137号","sum":"2023年印发，成都市2026修订版据此制定。","link":"https://cdjx.chengdu.gov.cn/cdsjxw/c132905/2026-08/04/content_3711bdd023de4b00adabe509e8e38f87.shtml"},{"city":"广东","year":"2016","status":"现行有效","title":"广东省《电动汽车充电基础设施建设运营管理办法》粤发改能电〔2016〕691号","sum":"2016年印发，系广东省现行省级充电设施建设运营管理办法（广州2019年通知已失效，省级691号仍现行）。","link":"https://www.xueshu.com/gdsrmzfgb/201722/30249866.html"},{"city":"福建","year":"2016","status":"暂行","title":"福建省《电动汽车充电基础设施建设运营管理暂行办法》闽政办〔2016〕62号","sum":"2016年暂行办法，实行备案制管理。","link":"https://www.fujian.gov.cn/zwgk/zfxxgk/szfwj/jgzz/xzgfxwj/201605/t20160511_1414736.htm"},{"city":"广西","year":"2026","status":"现行有效","title":"广西《电动汽车充电基础设施建设运营管理办法》桂能电力规〔2026〕11号","sum":"2026年1月印发，替代2016年暂行办法。","link":"http://fgw.gxzf.gov.cn/zfxxgkzl/fdzdgknr/gfx_wj/t27099957.shtml"},{"city":"北京","year":"2024","status":"现行有效","title":"北京《加快推进新能源汽车超级充电站建设实施方案》京发改〔2024〕1206号","sum":"超充站建设实施方案。","link":"https://fgw.beijing.gov.cn/fgwzwgk/2024zcwj/bwqtwj/202408/t20240816_3775804.htm"},{"city":"上海","year":"2023","status":"现行有效","title":"上海《公共停车场（库）充电设施建设管理办法》沪交行规〔2023〕1号","sum":"2023年2月印发。","link":"https://jtw.sh.gov.cn/2023ngfxwj/20230215/352f94bfa17e47aa9b17da38e1458261.html"},{"city":"上海","year":"2023","status":"现行有效","title":"上海《居民小区电动汽车充电设施建设管理办法》沪交行规〔2023〕3号","sum":"2023年4月印发。","link":"https://www.shanghai.gov.cn/202311bmgfxwj/20230606/92ae82c16383473993a74d9ab32b6e93.html"},{"city":"上海","year":"2025","status":"现行有效","title":"上海《公共领域新能源汽车充换电设施安全管理通知》","sum":"2026年8月1日起公共充换电设施须通过3C认证。","link":"https://jtw.sh.gov.cn/zxzfxx/20251202/3396acdbe39744bfadcb5d7a3694ccb8.html"},{"city":"深圳","year":"2023","status":"现行有效","title":"深圳市《新能源汽车充换电设施管理办法》深发改规〔2023〕10号","sum":"2023年10月印发。","link":"https://www.sz.gov.cn/zfgb/zcjd/content/post_10907016.html"},{"city":"深圳","year":"2026","status":"现行有效","title":"深圳福田区《新能源汽车充换电设施管理实施细则》","sum":"2026年5月印发。","link":"https://sf.sz.gov.cn/gfxwjcx/gfxwjjd/content/post_12812612.html"},{"city":"杭州","year":"2023","status":"现行有效","title":"杭州《推进新能源电动汽车充电基础设施建设运营实施办法（修订）》杭政办函〔2023〕75号","sum":"2023年12月施行。","link":"https://www.hangzhou.gov.cn/art/2023/11/16/art_1229063382_1838378.html"},{"city":"武汉","year":"2021","status":"暂行","title":"武汉《新能源汽车充电基础设施建设运营管理暂行办法》","sum":"2021年印发。","link":"https://fgw.wuhan.gov.cn/zfxxgk/zfxxgk_1/qtzdgkwj/202109/t20210902_1771228.html"},{"city":"天津","year":"2026","status":"现行有效","title":"天津《新能源汽车充电基础设施建设运营管理办法》","sum":"2026年印发，新建住宅须100%预留充电条件。","link":"https://m.d1ev.com/news/zhengce/60360"},{"city":"成都","year":"2026","status":"现行有效","title":"成都《电动汽车充电基础设施建设运营管理办法（2026年修订版）》","sum":"新建居住区固定车位100%配建，清理僵尸桩。","link":"https://jxt.sc.gov.cn/scjxt/szgz/2026/8/10/f25670e5505c48519b6cc91344093d72.shtml"},{"city":"重庆","year":"2026","status":"现行有效","title":"重庆《电动汽车充电设施服务能力高质量发展支持政策（2026—2028年）》","sum":"推动充电从规模建设向高质量发展转型。","link":"https://jjxxw.cq.gov.cn/zwgk_213/zcjd/tpjd/202607/t20260717_15829786.html"}],"ba":[{"city":"长沙市","type":"建设备案","req":"可建后备案","status":"新建场站全部备案","platform":"用湖南省充电基础设施智能服务管理平台（潇湘 e 行）","risk":"极高","polname":"湖南省电动汽车充换电基础设施建设与运营管理办法","url":"https://fgw.hunan.gov.cn/fgw/xxgk_70899/zcfg/dfxfg/202506/t20250603_33689945.html"},{"city":"成都市","type":"建设备案+投运备案","req":"建设前建设备案，建设后投运备案","status":"存量自建站均未备案\n第一个场站使用北京逸安启建设备案完成，投运备案待电站上线后推进","platform":"成都市新能源汽车及充电基础设施监测监管平台","risk":"高","polname":"成都市电动汽车充电基础设施建设运营管理办法","url":"https://cdjx.chengdu.gov.cn/cdsjxw/c132904/2026-08/04/e972a7233a93456f8850be2003e49ae6/files/ded0be7876e44a52a1905d99fbcb199a.pdf"},{"city":"杭州市","type":"建设备案","req":"必须建前备案","status":"新建站正常备案","platform":"杭州市新能源汽车充电设施智能化管理系统","risk":"高","polname":"杭州市推进新能源电动汽车充电基础设施建设运营实施办法","url":"https://www.hangzhou.gov.cn/art/2023/11/16/art_1229063382_1838378.html"},{"city":"广州市","type":"预备案+建设备案","req":"建前预备案，建后验收，完成备案后投运","status":"经营性电动汽车充换电设施项目登记工作属于行政备案（而非行政许可）\n地下场站需消防备案及验收，无法满足要求，地下场站均未备案","platform":"羊城充","risk":"中高","polname":"关于明确经营性电动汽车充换电设施项目登记有关问题的通知","url":"https://gxj.gz.gov.cn/zt/xnyqc/gggs/content/post_10017796.html"},{"city":"西安市","type":"建设备案","req":"要求建前备案，实操可后补","status":"个别场站备案","platform":"陕西智慧车联网平台","risk":"中高","polname":"陕西省电动汽车充电基础设施建设运营管理办法","url":"https://www.shaanxi.gov.cn/zfxxgk/zfgb/2024/d23q/202412/t20241226_3273739_wap.html"},{"city":"厦门市","type":"建设备案","req":"建前备案","status":"未备案","platform":"厦门市市级充电设施监管平台","risk":"中高","polname":"福建省电动汽车充电基础设施建设运营管理暂行办法","url":"http://www.fujian.gov.cn/zwgk/zfxxgk/szfwj/fzsj/201605/t20160511_1414736.htm"},{"city":"郑州市","type":"建设备案","req":"验收后备案","status":"未备案","platform":"郑州市充电基础设施智能服务平台","risk":"中高","polname":"郑州市电动汽车充电基础设施建设运营管理暂行办法","url":"https://public.zhengzhou.gov.cn/D0105Y/9346669.jhtml"},{"city":"温州市","type":"建设备案","req":"建前备案","status":"未备案","platform":"温州市充电基础设施智能服务平台","risk":"中高","polname":"浙江省新能源汽车充（换）电基础设施建设运营管理办法","url":"https://wzfgw.wenzhou.gov.cn/art/2024/11/15/art_1229558221_2036198.html"},{"city":"东莞市","type":"建设备案","req":"建前报备，建后验收，完成备案后投运","status":"未备案","platform":"粤易充","risk":"中高","polname":"东莞市电动汽车充换电设施建设运营 管理办法","url":"https://dgdp.dg.gov.cn/007330029/0801/201908/5883166efc124335ac82acfc38958999/files/fc72e03f5cc54db9b521677169837e32.pdf"},{"city":"北京市","type":"建设备案","req":"要求建前备案，实操可后补","status":"地上场站备案可领取建设补贴；\n地下场站未备案；","platform":"北京市充电设施公共服务管理平台","risk":"中","polname":"北京市新能源汽车高质量超级充电站发展行动计划","url":"https://csglw.beijing.gov.cn/zwxx/2024zcwj/202501/t20250106_3981561.html"},{"city":"重庆市","type":"建设备案","req":"要求建前备案，实操可后补","status":"补备案中","platform":"重庆市新能源汽车与充电基础设施监测平台（数字捷充平台）","risk":"中","polname":"全市公共充换电基础设施建设项目备案指南","url":"https://jjxxw.cq.gov.cn/zwgk_213/zcwj/qtwj/202311/t20231102_12509012.html"},{"city":"大连市","type":"建设备案","req":"建前备案","status":"未备案","platform":"辽宁省充换电一张网服务平台","risk":"中","polname":"大连市新能源汽车充换电基础设施建设奖补资金管理办法","url":"https://pc.dl.gov.cn/art/2024/9/10/art_10131_2393823.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiIyNWQxZGQ1NmEzNGE2NDczLTNiNTU3MTYzZDYzZGVmYmUifQ%3D%3D"},{"city":"深圳市","type":"建设备案","req":"建前报备，建后验收，完成备案后投运","status":"未备案","platform":"深圳市电力充储放一张网平台","risk":"中低","polname":"关于进一步规范新能源汽车充换电设施管理","url":"http://fgw.sz.gov.cn/zwgk/qt/tzgg/content/post_11153387.html"},{"city":"佛山市","type":"建设备案","req":"建前报备，建后验收，完成备案后投运","status":"未备案","platform":"粤易充","risk":"中低","polname":"广东省电动汽车充电基础设施建设\n运营管理办法","url":"https://file.deepbit.cn/us/202107/xmtsumjqzswwlnkwqszn.pdf"},{"city":"汕头市","type":"建设备案","req":"建前报备，建后验收，完成备案后投运","status":"未备案","platform":"粤易充","risk":"中低","polname":"广东省电动汽车充电基础设施建设\n运营管理办法","url":"https://file.deepbit.cn/us/202107/xmtsumjqzswwlnkwqszn.pdf"},{"city":"福州市","type":"建设备案","req":"既有停车场建设的，无需办理规划、建设和施工许可证，结合新建停车场、公园绿地建设的，纳入主体项目同步报批","status":"未备案","platform":"福建省新能源汽车运行监测管理平台（未接入）","risk":"中低","polname":"福建省电动汽车充电基础设施建设运营管理暂行办法","url":"http://www.fujian.gov.cn/zwgk/zfxxgk/szfwj/fzsj/201605/t20160511_1414736.htm"},{"city":"合肥市","type":"建设备案","req":"建前备案","status":"未备案","platform":"安徽省充换电基础设施综合监管服务平台（未接入）","risk":"中低","polname":"安徽省新能源汽车充换电基础设施建设运营管理办法","url":"https://fzggw.ah.gov.cn/public/7011/148994031.html"},{"city":"贵阳市","type":"建设备案","req":"建前备案","status":"未备案","platform":"贵州省电动汽车充电设施运营监控与服务平台","risk":"中低","polname":"贵州省电动汽车充（换）电基础设施\n建设运营管理办法","url":"https://nyj.guizhou.gov.cn/xwzx/gsgg/202506/t20250611_88128579.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiIzY2MyOWFmNGIxNGE3N2ViLWM5ZWJhMjFhYmQwOWZhMDcifQ%3D%3D"},{"city":"泉州市","type":"建设备案","req":"建前备案","status":"未备案","platform":"福建省新能源汽车运行监测管理平台（未接入）","risk":"中低","polname":"福建省电动汽车充电基础设施建设运营管理暂行办法","url":"http://www.fujian.gov.cn/zwgk/zfxxgk/szfwj/fzsj/201605/t20160511_1414736.htm"},{"city":"南宁市","type":"建设备案","req":"建前备案","status":"未备案","platform":"八桂充","risk":"中低","polname":"广西电动汽车充电基础设施建设运营管理办法","url":"http://fgw.gxzf.gov.cn/zfxxgkzl/wjzx/zyzc/zdyj/P020260109615143910158.pdf"},{"city":"海口市","type":"建设备案","req":"建前报备，建后验收完成备案","status":"未备案","platform":"海南省一张网平台","risk":"中低","polname":"海南省电动汽车充电基础设施验收暂行办法","url":"https://fg.sanya.gov.cn/fgwsite/tzgg/202507/a61b9d501ea04b6dbb12c8b4776110ff/files/c9bdcb5a173c48ea827da34e16ca642d.pdf"},{"city":"武汉市","type":"建设备案","req":"建前报备，建后验收完成备案","status":"未备案","platform":"武汉市新能源汽车充电基础设施公共服务平台","risk":"中低","polname":"武汉市新能源汽车充电基础设施建设运营管理暂行办法","url":"https://fgw.wuhan.gov.cn/zfxxgk/zfxxgk_1/qtzdgkwj/202109/t20210902_1771228.html"},{"city":"南昌市","type":"建设备案","req":"需备案","status":"未备案","platform":"江西省新能源汽车充电基础设施省级监管平台","risk":"中低","polname":"","url":"https://fgw.nc.gov.cn/ncfzggw/xxgkzcwj/201903/8c5d8ba6eacb4642a7f8a496c10c6e03/files/%E5%85%B3%E4%BA%8E%E5%8D%B0%E5%8F%91%E3%80%8A%E6%B1%9F%E8%A5%BF%E7%9C%81%E5%9F%8E%E5%B8%82%E5%85%AC%E5%85%B1%E5%9C%BA%E6%89%80%E5%92%8C%E5%B1%85%E4%BD%8F%EF%BC%88%E5%B0%8F%EF%BC%89%E5%8C%BA%E7%94%B5%E5%8A%A8%E6%B1%BD%E8%BD%A6%E5%85%85%E7%94%B5%E8%AE%BE%E6%96%BD%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95%EF%BC%88%E8%AF%95%E8%A1%8C%EF%BC%89%E3%80%8B%E7%9A%84%E9%80%9A%E7%9F%A5.pdf?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiJmM2JlYmIwZmJkMWQyYWI2LTIxMGRmNWE4Yjg3NTBkZjkifQ%3D%3D"},{"city":"沈阳市","type":"建设备案","req":"需备案","status":"未备案","platform":"辽宁省新能源汽车监管平台","risk":"中低","polname":"关于建立充电桩设施的建议（第0267号）的答复","url":"https://jxw.shenyang.gov.cn/zwgk/fdzdgknr/jyta/srddbjy/202312/t20231219_4576394.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI0ZTA5NzI5MDRmZmRiNjlkLTNjZjQ3ODQyMGIyMDQ3NTYifQ%3D%3D"},{"city":"太原市","type":"建设备案","req":"需备案","status":"未备案","platform":"山西省充（换）电基础设施监管服务平台","risk":"中低","polname":"","url":"https://ty.sxzwfw.gov.cn/icity/project/taiyuan/default/public/assets/upload/%E5%A4%AA%E5%8E%9F%E5%B8%82%E7%94%B5%E5%8A%A8%E6%B1%BD%E8%BD%A6%E5%85%85%EF%BC%88%E6%8D%A2%EF%BC%89%E7%94%B5%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E5%BB%BA%E8%AE%BE%E9%A1%B9%E7%9B%AE%E5%AE%A1%E6%89%B9%E6%9C%8D%E5%8A%A1%E6%8C%87%E5%BC%95.pdf?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiJhNGQxMmNiNjg4NDlkOGMzLTE3OGJkMTMxZTZhMGIyYjkifQ%3D%3D"},{"city":"天津市","type":"建设备案","req":"需备案","status":"未备案","platform":"天津市新能源汽车充电基础设施综合服务平台（津 e 充）","risk":"中低","polname":"天津市进一步构建高质量充电基础设施体系的实施方案","url":"https://fzgg.tj.gov.cn/zwgk_47325/zcfg_47338/zcwjx/fgwj/202309/t20230919_6410457.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiJiYjc4MjNlNTk0ODA5ZDFmLWQ1OTM3ZTUwNDYzZmJkYTYifQ%3D%3D"},{"city":"嘉兴市","type":"建设备案","req":"开工前备案","status":"未备案","platform":"浙里充","risk":"中低","polname":"浙江省新能源汽车充（换）电基础设施建设运营管理办法","url":"https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"},{"city":"金华市","type":"建设备案","req":"开工前备案","status":"未备案","platform":"浙里充","risk":"中低","polname":"浙江省新能源汽车充（换）电基础设施建设运营管理办法","url":"https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"},{"city":"宁波市","type":"建设备案","req":"开工前备案","status":"未备案","platform":"浙里充","risk":"中低","polname":"浙江省新能源汽车充（换）电基础设施建设运营管理办法","url":"https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"},{"city":"绍兴市","type":"建设备案","req":"开工前备案","status":"未备案","platform":"绍兴市充电基础设施智能服务平台","risk":"中低","polname":"浙江省新能源汽车充（换）电基础设施建设运营管理办法","url":"https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"},{"city":"台州市","type":"建设备案","req":"开工前备案","status":"未备案","platform":"浙里充","risk":"中低","polname":"浙江省新能源汽车充（换）电基础设施建设运营管理办法","url":"https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"},{"city":"青岛市","type":"建设备案","req":"竣工验收备案","status":"未备案","platform":"齐鲁 e 充","risk":"中低","polname":"关于进一步加强和规范我省电动汽车 \n充电基础设施建设运营管理的实施意见","url":"http://nyj.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=a3966efdf0be4e0ebef44f3f584055d2.pdf"},{"city":"济南市","type":"建设备案","req":"竣工验收备案","status":"未备案","platform":"齐鲁 e 充","risk":"中低","polname":"关于进一步加强和规范我省电动汽车 \n充电基础设施建设运营管理的实施意见","url":"http://nyj.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=a3966efdf0be4e0ebef44f3f584055d2.pdf"},{"city":"南京市","type":"建设备案","req":"既有车位安装充电桩，按一般电气设备安装管理，可不办理备案","status":"未备案","platform":"江苏省新能源汽车充电设施运营监测服务平台","risk":"低","polname":"江苏省新能源汽车充（换）电\n设施建设运营管理办法","url":"https://www.jiangsu.gov.cn/art/2022/3/31/art_64797_10399100.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI3M2JjODUxNzYwNTNkYjU5LTc4NTg5ODNmZjU2NzMzZjgifQ%3D%3D"},{"city":"常州市","type":"建设备案","req":"既有车位安装充电桩，按一般电气设备安装管理，可不办理备案","status":"未备案","platform":"江苏省新能源汽车充电设施运营监测服务平台","risk":"低","polname":"江苏省新能源汽车充（换）电\n设施建设运营管理办法","url":"https://www.jiangsu.gov.cn/art/2022/3/31/art_64797_10399100.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI3M2JjODUxNzYwNTNkYjU5LTc4NTg5ODNmZjU2NzMzZjgifQ%3D%3D"},{"city":"南通市","type":"建设备案","req":"既有车位安装充电桩，按一般电气设备安装管理，可不办理备案","status":"未备案","platform":"江苏省新能源汽车充电设施运营监测服务平台","risk":"低","polname":"江苏省新能源汽车充（换）电\n设施建设运营管理办法","url":"https://www.jiangsu.gov.cn/art/2022/3/31/art_64797_10399100.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI3M2JjODUxNzYwNTNkYjU5LTc4NTg5ODNmZjU2NzMzZjgifQ%3D%3D"},{"city":"苏州市","type":"建设备案","req":"既有车位安装充电桩，按一般电气设备安装管理，可不办理备案","status":"未备案","platform":"江苏省新能源汽车充电设施运营监测服务平台","risk":"低","polname":"江苏省新能源汽车充（换）电\n设施建设运营管理办法","url":"https://www.jiangsu.gov.cn/art/2022/3/31/art_64797_10399100.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI3M2JjODUxNzYwNTNkYjU5LTc4NTg5ODNmZjU2NzMzZjgifQ%3D%3D"},{"city":"无锡市","type":"建设备案","req":"既有车位安装充电桩，按一般电气设备安装管理，可不办理备案","status":"未备案","platform":"江苏省新能源汽车充电设施运营监测服务平台","risk":"低","polname":"江苏省新能源汽车充（换）电\n设施建设运营管理办法","url":"https://www.jiangsu.gov.cn/art/2022/3/31/art_64797_10399100.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI3M2JjODUxNzYwNTNkYjU5LTc4NTg5ODNmZjU2NzMzZjgifQ%3D%3D"},{"city":"昆明市","type":"建设备案","req":"独立占地的集中式充换电站建设项目实行备案制\n充电基础设施运营商实行备案管理","status":"未备案","platform":"昆明市新能源汽车运营信息管理及服务平台（春城 e 路行）","risk":"低","polname":"云南省电动汽车充电基础设施建设运营管理暂行办法","url":"https://www.yn.gov.cn/zwgk/zfgb/2019/2019d21q/sjbmwj/201912/t20191230_186423.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI3OTU5Yzc3ZGYwNTUzYTUwLTg3ODliMDA0ZmNkZTM2MzAifQ%3D%3D"},{"city":"上海市","type":"运营备案","req":"建后备案","status":"全量计入监管平台，可申领运营补贴","platform":"上海充换电设施公共数据采集与监测市级平台","risk":"无","polname":"关于本市进一步推动充换电基础设施建设的实施意见","url":"https://www.shanghai.gov.cn/xnysj/20250610/ed23a7c382c1498abc0656b768cefd9e.html"}],"daily":[{"date":"2026-08-16","src":"网易·青杉杂谈","title":"多地开始清理小区私装充电桩，规范私桩安装审批","sum":"近期多地集中清理不合规私装充电桩，针对人防车位不可安装、线路未经物业和电力部门审批私自拉线等行为开展整治，消除火灾隐患，规范小区私桩安装审批流程。","link":"https://www.163.com/dy/article/L4E6MC140553TANT.html"},{"date":"2026-08-15","src":"人民日报","title":"截至6月底全国电动汽车充电基础设施总数达2305.7万个，同比增长43.2%","sum":"国家能源局数据显示，截至2026年6月底，我国电动汽车充电基础设施（枪）总数达2305.7万个，同比增长43.2%，其中公共充电设施500.9万个，额定总功率2.47亿千瓦。","link":"http://jx.people.com.cn/BIG5/n2/2026/0815/c186330-41668575.html"},{"date":"2026-08-15","src":"重庆新闻网","title":"重庆铜梁开展电动汽车充电桩计量监督检查","sum":"铜梁区市场监管局针对商业综合体、公共停车场等充电设施集中区域开展充电桩计量监督检查，核查在用充电桩是否通过法定计量检定、是否在检定有效期内、强检封印是否完好，并查阅运营企业资质。","link":"http://www.cqnews.net/app/content_1537903412603248640.html"},{"date":"2026-08-15","src":"吉林日报","title":"2026年吉林省新能源汽车下乡活动启动，同步推进县域充换电基础设施建设","sum":"8月15日活动在长春农博园启动，主题“绿色、低碳、智能、安全——智行千县万镇，绿惠乡村万家”，同步推进全省汽车以旧换新、县域充换电基础设施建设等重点任务，加快新能源汽车在县乡普及。","link":"http://jlrbszb.dajilin.com/pc/paper/c/202608/16/content_1060022.html"},{"date":"2026-08-14","src":"新浪汽车","title":"800V超快充技术普及，充电桩3C认证本月正式实施","sum":"2026年头部车企将充电时间压缩至10分钟内，充电桩强制3C认证于8月正式实施，800V超快充进入实用化普及阶段。","link":"https://auto.sina.cn/2026-08-14/detail-ininffec3155635.d.html"},{"date":"2026-08-14","src":"兰州日报","title":"兰州规范充电桩市场，新购新装充电桩须具备CCC认证","sum":"根据市场监管总局2024年第50号公告，8月1日起电动汽车供电设备实施强制性产品认证管理。兰州规范全市充电桩生产、销售、安装及使用，新购新装充电桩须具备CCC认证。","link":"https://gansu.gansudaily.com.cn/system/2026/08/14/031417174.shtml"},{"date":"2026-08-14","src":"人民日报/市场监管总局","title":"市场监管总局强化民生计量监管，上半年检查充电桩运营单位超1.1万家","sum":"市场监管总局聚焦电动汽车充电设施等重点民生计量器具强化计量监管，严查计量作弊、器具失准、监管缺位等问题。今年1-6月全国监督检查充电桩运营单位11164家。","link":"http://sc.people.com.cn/BIG5/n2/2026/0813/c345167-41666964.html"},{"date":"2026-08-14","src":"宝鸡市场监管","title":"宝鸡市市场监管局高新分局开展充电桩计量执法检查","sum":"为规范新能源汽车充电桩计量设备使用，宝鸡市市场监管局高新分局开展充电桩执法检查，摸清辖区经营户底数、建立经营者台账，重点核查计量准确性，维护市场公平。","link":"https://m.thepaper.cn/newsDetail_forward_33784487"},{"date":"2026-08-14","src":"中新网山西","title":"山西曲沃开展充电桩专项安全隐患排查整治","sum":"高温雷雨天气多发，充电桩长期户外暴晒、高负荷运行易出现设备隐患，国网山西电力临汾曲沃党员服务队开展充电桩专项安全隐患排查整治行动，以精准运维保障绿色出行。","link":"https://www.sx.chinanews.com/news/2026/0814/250650.html"},{"date":"2026-08-13","src":"住建部/中国政府采购报","title":"住建部就《电动汽车充换电设施项目规范（征求意见稿）》公开征求意见","sum":"住建部办公厅印发通知，就工程建设强制性国家规范《电动汽车充换电设施项目规范（征求意见稿）》面向全社会公开征集意见，反馈截至2026年8月31日，明确优化选址、安全可靠、经济合理等建设总原则。","link":"https://m.sohu.com/a/1062389785_122014422/"},{"date":"2026-08-13","src":"新华日报","title":"汽车充电桩持证上岗：CCC认证8月1日起强制实施","sum":"电动汽车供电设备强制性产品认证8月1日起强制实施，未获CCC认证的充电桩不得出厂、销售、进口或使用，行业从推荐性国标转向强制约束。","link":"http://finance.sina.cn/2026-08-13/detail-ininchpe0259877.d.html"},{"date":"2026-08-13","src":"中国质量新闻网","title":"黑龙江双鸭山发布充电桩CCC认证强制实施提醒告诫","sum":"依据市场监管总局2024年第50号公告，2026年8月1日起电动汽车供电设备正式实施强制性产品认证，双鸭山市市场监管局提醒各充电桩生产、销售、运营使用经营单位落实CCC认证。","link":"https://m.cqn.com.cn/ms/content/2026-08/13/content_9168512.htm"},{"date":"2026-08-10","src":"四川省经信厅","title":"成都施行新版充电设施管理办法，智能化改造、有序退出僵尸桩","sum":"新建居住区固定车位100%配建；新建设施须具备智能有序充电、异常检测、远程控制；连续6个月无电量的僵尸桩整改或拆除。","link":"https://jxt.sc.gov.cn/scjxt/szgz/2026/8/10/f25670e5505c48519b6cc91344093d72.shtml"},{"date":"2026-08-10","src":"辽阳市财政局","title":"辽阳市两县区入选2026年国家级县域充换电设施补短板试点名单","sum":"财政部、工信部、交通运输部联合公布2026年县域充换电设施补短板试点县名单，全国59个联合试点县入选，辽阳县-太子河区试点上榜，实施期2026至2028年，获中央补助资金3960万元。","link":"http://czj.liaoyang.gov.cn/govxxgk/LYCZJ/2026-08-10/8802fc14-8eba-4dab-8e30-cbcde46995e1.html"},{"date":"2026-08-08","src":"澎湃新闻","title":"国家发改委、能源局印发《新型电力系统建设十五五规划》","sum":"提出2030年充电基础设施总量超4000万个、大功率约30万个，支撑超1.1亿辆电车，构建城市面状、公路线状、乡村点状布局。","link":"https://m.thepaper.cn/newsDetail_forward_33745190"},{"date":"2026-08-06","src":"黔西南州能源局","title":"黔西南州关于电动汽车充电设施运营企业备案的通知","sum":"依据贵州省充电基础设施建设运营管理办法（暂行），对贵州海纳畅通新能源科技有限责任公司充电设施运营商备案申请予以备案。","link":"https://www.qxn.gov.cn/zwgk/zfjg/znyj_5135318/bmxxgkml_5135321/bmgg_5135326/202608/t20260806_90709359.html"},{"date":"2026-08-04","src":"成都市经信局","title":"成都印发《电动汽车充电基础设施建设运营管理办法（2026年修订版）》","sum":"市经信局会同发改、住建、应急等5部门印发，规范充电基础设施规划、建设、运营及监督管理，促进行业高质量发展。","link":"https://cdjx.chengdu.gov.cn/cdsjxw/c132904/2026-08/04/content_e972a7233a93456f8850be2003e49ae6.shtml"},{"date":"2026-08-02","src":"有驾","title":"8月1日起两项汽车新规落地：充电桩安装与维修新规","sum":"8月1日正式落地的两项汽车新规，针对维修乱收费与充电桩安装难，影响全国超4500万辆新能源车保有量。","link":"https://youjia-pc.bdstatic.com/article/9690974055562557356.html"},{"date":"2026-08-01","src":"东方财富网","title":"8月1日起，电动汽车充电桩CCC强制认证全面落地","sum":"依据市场监管总局2024年第50号公告，电动汽车供电设备纳入CCC强制认证，配套国标GB 39752-2024、GB 44263-2024同步落地。","link":"https://finance.eastmoney.com/a/202608013829030617.html"},{"date":"2026-07-30","src":"兴仁市能源局","title":"兴仁市对辖区公共充电站开展安全巡查","sum":"围绕设备运行安全、消防设施配备、安全警示标识张贴等开展日常安全巡查，听取企业汇报、查阅资料、现场查看桩体。","link":"https://www.gzxr.gov.cn/zfbm/snyj/gzdt_5930934/202607/t20260730_90678052.html"},{"date":"2026-07-30","src":"咸阳新闻网","title":"兴平检察：给充电桩体检，开展充电设施专项监督排查","sum":"兴平市检察院对辖区小区、公共充电点位全覆盖实地核查，发现消防器材不足、线路杂乱等共性隐患，以检察公益诉讼履职。","link":"https://m.sxxynews.com.cn/2026/0730/452053.html"},{"date":"2026-07-29","src":"福州市发改委","title":"福州持续开展能源领域大排查，专项检查充电场站安全","sum":"核查充电桩接地系统、消防设施、电缆绝缘性能及运维台账，现场测试多台充电桩急停装置，组织协会及安全专家联合检查。","link":"https://fgw.fuzhou.gov.cn/fgwzwgk/tpxw/202607/t20260729_5351713.htm"},{"date":"2026-07-23","src":"望城区发改局","title":"长沙望城区开展充电桩基础设施安全生产专项排查","sum":"对辖区150余家充电站开展充电桩基础设施安全生产专项排查整治，重点排查设备本体安全，防范火灾风险。","link":"http://www.wangcheng.gov.cn/xxgk_343/qzfxxgkml/qtzfxxgk_131516/gkmlgzdt/gkmubmdt/202607/t20260723_12508750.html"},{"date":"2026-07-17","src":"重庆市经信委","title":"重庆发布充电设施服务能力高质量发展支持政策图解","sum":"《重庆市电动汽车充电设施服务能力高质量发展支持政策（2026—2028年）》，推动充电从规模建设向高质量发展转型。","link":"https://jjxxw.cq.gov.cn/zwgk_213/zcjd/tpjd/202607/t20260717_15829786.html"},{"date":"2026-07-13","src":"杭州市建委","title":"杭州发布新能源货车大功率充电设施奖补办法解读","sum":"《杭州市新能源货车大功率充电设施奖补资金管理办法（2026—2028年）》，对大功率充电设施给予奖补，有效期三年。","link":"https://cxjw.hangzhou.gov.cn/col/col1229486201/art/2026/art_03df648b0a9c4876ad3c3aa6a61d69af.html"},{"date":"2026-07-13","src":"东安县自然资源局","title":"湖南《充换电基础设施新建/改扩建投资项目备案管理通知》解读","sum":"省发改委出台湘发改能源规〔2026〕378号，明确充换电基础设施新建或改扩建投资项目备案管理事项。","link":"http://gtj.da.gov.cn/da/yhzcjdurk/202607/da305e95049c41ccb85a3c2dc694c964.shtml"},{"date":"2026-07-01","src":"琼海市发改委","title":"琼海市2026年充换电基础设施验收及补贴申报公告","sum":"组织2026年充换电设施验收及补贴申报，体现先建设、后验收、再申报的补贴流程。","link":"https://qionghai.hainan.gov.cn/ywdt/zwdt/bmgz/202607/t20260703_4104163.html"},{"date":"2026-06-18","src":"工信部","title":"五部门组织开展2026年新能源汽车下乡活动","sum":"乡村换购新能源车可申领以旧换新补贴，推动智能网联、新型充换电、光储充一体化、车网互动技术在乡村应用。","link":"https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_addcc0a2fd3f4bf6993e3e48f7b8d4c3.html"},{"date":"2026-03-13","src":"广东省财政厅","title":"三部门启动2026年县域充换电设施补短板试点申报（59县）","sum":"财政部、工信部、交通运输部联合印发财办建〔2026〕8号，计划全国支持59个联合试点县，补齐农村公共充换电设施短板。","link":"https://czt.gd.gov.cn/czxw/content/post_4867133.html"},{"date":"2026-01-09","src":"广西发改委","title":"广西印发《电动汽车充电基础设施建设运营管理办法》","sum":"桂能电力规〔2026〕11号，2026年1月印发，替代2016年暂行办法；新建居住区固定车位全部建设或预留充电条件。","link":"http://fgw.gxzf.gov.cn/zfxxgkzl/fdzdgknr/gfx_wj/t27099957.shtml"}]};
+const DATA = {
+ "sub": [
+  {
+   "city": "全国",
+   "level": "/",
+   "req": "加强安全管理：充电站选址、建设必须严格执行国家标准",
+   "cat": "国务院文件",
+   "polname": "发改能源〔2025〕1250号 电动汽车充电设施服务能力“三年倍增”行动方案（2025—2027年）",
+   "url": "https://www.gov.cn/zhengce/zhengceku/202510/content_7044559.htm"
+  },
+  {
+   "city": "全国",
+   "level": "/",
+   "req": "特殊建设工程，需开展特殊消防设计专家评审，且需进行消防验收",
+   "cat": "国务院文件",
+   "polname": "住建部 51 号令 建设工程消防设计审查验收管理暂行规定",
+   "url": "https://www.gov.cn/gongbao/content/2020/content_5528183.htm"
+  },
+  {
+   "city": "全国",
+   "level": "/",
+   "req": "一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "国标",
+   "polname": "GB/T 50966-2024《电动汽车充电站设计标准》",
+   "url": "https://oss.jiaozuo.gov.cn/jiaozuo_zjj/ueditor/asp/upload/file/20250519/17476202682213819.pdf"
+  },
+  {
+   "city": "全国",
+   "level": "/",
+   "req": "地下车库必须配齐：火灾自动报警、机械排烟、自动喷淋、消防应急疏散照明，缺任一系统不得建站。",
+   "cat": "国标",
+   "polname": "GB/T51313-2018《电动汽车分散充电设施工程技术标准》",
+   "url": "http://www.sifaenergy.cn/assets/files/GB-T51313-2018.pdf"
+  },
+  {
+   "city": "全国",
+   "level": "/",
+   "req": "当地下一层不具备布置条件时，应布置在地下二层",
+   "cat": "征询意见稿",
+   "polname": "",
+   "url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2026/art_11a3e3e9b98446119238fc5f01aa2a03.html"
+  },
+  {
+   "city": "全国",
+   "level": "/",
+   "req": "（集中式）充换电站应独立设置，且不在地下设置",
+   "cat": "团标",
+   "polname": "T/CFPA 051—2026《电动汽车充换电站消防安全技术规范》",
+   "url": "http://www.cfpa.cn/uploads/home/enclosure/TCFPA%20051-2026%20%E7%94%B5%E5%8A%A8%E6%B1%BD%E8%BD%A6%E5%85%85%E6%8D%A2%E7%94%B5%E7%AB%99%E6%B6%88%E9%98%B2%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.pdf"
+  },
+  {
+   "city": "上海市",
+   "level": "低",
+   "req": "优先地面，地下首选B1，并满足消防要求；\n禁止B4及以下；",
+   "cat": "地方要求",
+   "polname": "《上海市公共停车场（库）充电设施建设管理办法》",
+   "url": "https://jtw.sh.gov.cn/2023ngfxwj/20230215/352f94bfa17e47aa9b17da38e1458261.html"
+  },
+  {
+   "city": "北京市",
+   "level": "低",
+   "req": "首先地上，如需设置在地下，宜布置在B1。禁止B4及以下",
+   "cat": "地方要求",
+   "polname": "《北京市新能源汽车高质量超级充电站技术导则》",
+   "url": "https://csglw.beijing.gov.cn/zwxx/2024zcwj/202501/t20250106_3981561.html"
+  },
+  {
+   "city": "重庆市",
+   "level": "高",
+   "req": "地下禁止大功率充电站",
+   "cat": "地方要求",
+   "polname": "政策出具中，（新规）",
+   "url": ""
+  },
+  {
+   "city": "天津市",
+   "level": "低",
+   "req": "四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "参考国标",
+   "polname": "GB/T 50966-2024《电动汽车充电站设计标准》",
+   "url": "https://oss.jiaozuo.gov.cn/jiaozuo_zjj/ueditor/asp/upload/file/20250519/17476202682213819.pdf"
+  },
+  {
+   "city": "浙江省",
+   "level": "低",
+   "req": "地下充电站成为不宜大于 12 辆，不应大于 18 辆",
+   "cat": "省级要求",
+   "polname": "浙江省消防技术规范难点问题操作技术指南",
+   "url": "https://zjjcmspublicnew.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/cms_files/filemanager/1568154/attach/202512/b16efc2531714a5da1cb3841da5e6bf5.pdf?fileName=%E6%B5%99%E6%B1%9F%E7%9C%81%E6%B6%88%E9%98%B2%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83%E9%9A%BE%E7%82%B9%E9%97%AE%E9%A2%98%E6%93%8D%E4%BD%9C%E6%8A%80%E6%9C%AF%E6%8C%87%E5%8D%97%EF%BC%882025%E5%B9%B4%E7%89%88%EF%BC%89.pdf"
+  },
+  {
+   "city": "浙江省",
+   "level": "低",
+   "req": "一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "参考国标",
+   "polname": "浙江省新能源汽车充（换）电基础设施建设运营管理办法",
+   "url": "https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"
+  },
+  {
+   "city": "杭州市",
+   "level": "低",
+   "req": "一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "参考国标",
+   "polname": "杭州市推进新能源电动汽车充电基础设施建设运营实施办法（修订）",
+   "url": "https://www.hangzhou.gov.cn/art/2023/11/16/art_1229063382_1838378.html"
+  },
+  {
+   "city": "宁波市",
+   "level": "低",
+   "req": "一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "参考国标",
+   "polname": "浙江省新能源汽车充（换）电基础设施建设运营管理办法",
+   "url": "https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"
+  },
+  {
+   "city": "广东省",
+   "level": "低",
+   "req": "四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；地下场站需消防验收",
+   "cat": "省级要求",
+   "polname": "DBJ/T 15-150-2018《电动汽车充电基础设施建设技术规程》",
+   "url": "https://www.foshan.gov.cn/attachment/0/578/578232/6905789.pdf"
+  },
+  {
+   "city": "广东省",
+   "level": "低",
+   "req": "地下二、三层及以上集中超充无现行国标完整覆盖，必须开展省级消防专家评审论证。\n竣工后需组织消防验收",
+   "cat": "省级要求",
+   "polname": "广东省住房和城乡建设厅关于规范建设工程消防设计有关评审论证工作的通知",
+   "url": "https://www.lufengshi.gov.cn/zjj/zwgk/gzdt/content/post_1148161.html"
+  },
+  {
+   "city": "深圳市",
+   "level": "高",
+   "req": "地下禁止大功率充电站",
+   "cat": "地方标准",
+   "polname": "新能源汽车地下停放场所消防安全管理规范",
+   "url": "https://www.sz.gov.cn/attachment/1/1491/1491519/11578943.pdf"
+  },
+  {
+   "city": "广州市",
+   "level": "低",
+   "req": "四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；\n地下场站需消防验收",
+   "cat": "地方要求",
+   "polname": "DBJ/T 15-150-2018《电动汽车充电基础设施建设技术规程》",
+   "url": "https://www.foshan.gov.cn/attachment/0/578/578232/6905789.pdf"
+  },
+  {
+   "city": "东莞市",
+   "level": "高",
+   "req": "地下禁止大功率充电站",
+   "cat": "地方要求",
+   "polname": "东莞市充换电基础设施规划设计、施工、运维安全管理技术规范",
+   "url": "https://www.ttbz.org.cn/upload/file/20230510/6381934291951018352053253.pdf"
+  },
+  {
+   "city": "佛山市",
+   "level": "低",
+   "req": "四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；地下场站需消防验收",
+   "cat": "参考省标",
+   "polname": "佛山市物业管理区域新能源汽车充电设施安全建设管理指引（2025年修订）",
+   "url": "https://fszj.foshan.gov.cn/attachment/0/578/578380/6906357.pdf"
+  },
+  {
+   "city": "汕头市（南澳县）",
+   "level": "低",
+   "req": "四级充电站宜设于B1靠近出入口,并满足验收要求；禁止B4及以下；",
+   "cat": "参考省标",
+   "polname": "南澳县新能源汽车充换电基础设施管理暂行办法",
+   "url": "https://www.shantou.gov.cn/cnst/ztzl/sthqbmzczt/naxrmzfmhwz/zcwj/content/post_2449417.html"
+  },
+  {
+   "city": "江苏省",
+   "level": "中",
+   "req": "宜布置在B1，禁止B3及以下",
+   "cat": "地方要求",
+   "polname": "江苏省地下汽车库电动汽车停放充电区域安全管理规定(试行)",
+   "url": "https://www.yixing.gov.cn/doc/2024/12/04/1273691.shtml"
+  },
+  {
+   "city": "苏州市",
+   "level": "中",
+   "req": "宜B1，禁止B3及以下",
+   "cat": "地方要求",
+   "polname": "江苏省地下汽车库电动汽车停放充电区域安全管理规定(试行)",
+   "url": "https://www.yixing.gov.cn/doc/2024/12/04/1273691.shtml"
+  },
+  {
+   "city": "南京市",
+   "level": "中",
+   "req": "应布置在B1，确有困难时可布置在B2，不应布置在B3及以下",
+   "cat": "地方要求",
+   "polname": "南京市地下电动汽车库防火设计导则",
+   "url": "http://njtszx.cn/ueditor/php/upload/file/20240108/1704696658623960.pdf"
+  },
+  {
+   "city": "无锡市",
+   "level": "中",
+   "req": "宜布置在B1，禁止B3及以下",
+   "cat": "地方要求",
+   "polname": "江苏省地下汽车库电动汽车停放充电区域安全管理规定(试行)",
+   "url": "https://www.yixing.gov.cn/doc/2024/12/04/1273691.shtml"
+  },
+  {
+   "city": "南通市",
+   "level": "中",
+   "req": "宜布置在B1，禁止B3及以下",
+   "cat": "地方要求",
+   "polname": "江苏省地下汽车库电动汽车停放充电区域安全管理规定(试行)",
+   "url": "https://www.yixing.gov.cn/doc/2024/12/04/1273691.shtml"
+  },
+  {
+   "city": "常州市",
+   "level": "高",
+   "req": "地下禁止大功率充电站",
+   "cat": "地方要求",
+   "polname": "加强地下电动汽车充电场所消防安全管理和建设意见（试行",
+   "url": "https://js.119.gov.cn/202410/jsxfww-menu-gzdt_c_6ddce7c1472047069fc2.html"
+  },
+  {
+   "city": "成都市",
+   "level": "低",
+   "req": "执行国标：宜设于B1靠近出入口,禁止B4及以下\n地下功率大于1200kW制增加三道安全评价手续",
+   "cat": "地方标准",
+   "polname": "电动汽车充电设施消防安全规范",
+   "url": "https://dbba.sacinfo.org.cn/attachment/onlineRead/f41a3e0f409a1553f76917222e52a15bc37357fe38273058c518b4fb6d33cc65?file=%2Fportal%2Fdownload%2Ff41a3e0f409a1553f76917222e52a15bc37357fe38273058c518b4fb6d33cc65#zoom=auto&disablerange=true&disablestream=true&disableautofetch=true"
+  },
+  {
+   "city": "全国",
+   "level": "低",
+   "req": "",
+   "cat": "地方要求",
+   "polname": "《成都市电动汽车充电设施建设运营管理办法》",
+   "url": "https://cdjx.chengdu.gov.cn/cdsjxw/c132872/2023-01/05/cdd1f91f981b422b8481acabc25f91bc/files/35fc34bdaf374ac183b411c9d5d80fb0.pdf"
+  },
+  {
+   "city": "福建省",
+   "level": "低",
+   "req": "宜布置在B1",
+   "cat": "地方要求",
+   "polname": "福建省电动汽车充电基础设施建设技术规程",
+   "url": "https://zjt.fujian.gov.cn/xxgk/zfxxgkzl/xxgkml/dfxfgzfgzhgfxwj/jskj_3794/201803/P020180612710149618627.pdf"
+  },
+  {
+   "city": "福建省",
+   "level": "低",
+   "req": "宜布置在B1，禁止B4及以下",
+   "cat": "地方要求",
+   "polname": "福建省房屋建筑工程消防设计技术审查疑难问题解答（2025年版）",
+   "url": "https://zjt.fujian.gov.cn/xxgk/zfxxgkzl/xxgkml/dfxfgzfgzhgfxwj/qt_3796/202504/t20250421_6902692.htm"
+  },
+  {
+   "city": "厦门市",
+   "level": "低",
+   "req": "宜布置在B1",
+   "cat": "地方要求",
+   "polname": "福建省电动汽车充电基础设施建设技术规程",
+   "url": "https://zjt.fujian.gov.cn/xxgk/zfxxgkzl/xxgkml/dfxfgzfgzhgfxwj/jskj_3794/201803/P020180612710149618627.pdf"
+  },
+  {
+   "city": "福州市",
+   "level": "高",
+   "req": "地下禁止大功率充电站",
+   "cat": "地方要求",
+   "polname": "福州市电动车充电设施消防设计导则",
+   "url": "https://www.fuzhou.gov.cn/zwgk/zxwj/bmwj_1/202302/P020230209530346307576.pdf"
+  },
+  {
+   "city": "泉州市",
+   "level": "低",
+   "req": "宜布置在B1，禁止B4及以下",
+   "cat": "地方要求",
+   "polname": "《泉州中心市区公共充电基础设施布局专项规划(2023-2030年)》",
+   "url": "https://fgw.quanzhou.gov.cn/zwgk/zfxxgkzl/xxgkml/ghjh/202403/t20240307_3011971.htm"
+  },
+  {
+   "city": "山东省",
+   "level": "中",
+   "req": "宜布置在B1，禁止B3及以下",
+   "cat": "地方要求",
+   "polname": "汽车库设计防火标准",
+   "url": "http://zjt.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=4f443d3ec86848dcb68cca6e58ddc17b.pdf"
+  },
+  {
+   "city": "山东省",
+   "level": "中",
+   "req": "特殊建设工程，需开展特殊消防设计专家评审，且需进行消防验收",
+   "cat": "地方要求",
+   "polname": "山东省特殊消防设计专家评审办法",
+   "url": "http://zjt.shandong.gov.cn/art/2024/9/2/art_293162_69723.html"
+  },
+  {
+   "city": "青岛市",
+   "level": "中",
+   "req": "宜布置在B1，禁止B3及以下",
+   "cat": "地方要求",
+   "polname": "汽车库设计防火标准",
+   "url": "http://zjt.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=4f443d3ec86848dcb68cca6e58ddc17b.pdf"
+  },
+  {
+   "city": "济南市",
+   "level": "中",
+   "req": "宜布置在B1，禁止B3及以下",
+   "cat": "地方要求",
+   "polname": "汽车库设计防火标准",
+   "url": "http://zjt.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=4f443d3ec86848dcb68cca6e58ddc17b.pdf"
+  },
+  {
+   "city": "湖南省",
+   "level": "高",
+   "req": "要求备案及验收（CMA、消防、排雷）",
+   "cat": "地方要求",
+   "polname": "湖南省电动汽车充换电基础设施建设与运营管理办法",
+   "url": "https://fgw.hunan.gov.cn/fgw/xxgk_70899/zcfg/dfxfg/202506/t20250603_33689945.html"
+  },
+  {
+   "city": "湖南省",
+   "level": "高",
+   "req": "地下禁止大功率充电站",
+   "cat": "地方要求",
+   "polname": "湖南省电动汽车充电设施设计标准",
+   "url": "https://ebook.chinabuilding.com.cn/zbooklib/bookpdf/probation?SiteID=1&bookID=135505"
+  },
+  {
+   "city": "长沙市",
+   "level": "高",
+   "req": "地下禁止大功率充电站",
+   "cat": "地方要求",
+   "polname": "湖南省电动汽车充电设施设计标准",
+   "url": "https://ebook.chinabuilding.com.cn/zbooklib/bookpdf/probation?SiteID=1&bookID=135505"
+  },
+  {
+   "city": "武汉市",
+   "level": "低",
+   "req": "四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "地方要求",
+   "polname": "武汉市新能源汽车充电基础设施建设运营管理暂行办法",
+   "url": "https://fgw.wuhan.gov.cn/zfxxgk/zfxxgk_1/qtzdgkwj/202109/t20210902_1771228.html"
+  },
+  {
+   "city": "西安市",
+   "level": "低",
+   "req": "优先建设在地面\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "地方要求",
+   "polname": "西安市储能电站、综合能源服务站和大功率充电设施布局规划蓝皮书（2026-2030年）",
+   "url": "https://xadrc.xa.gov.cn/xxgk/ghjh/zcqfzgh/2039544454241681409.html"
+  },
+  {
+   "city": "郑州市",
+   "level": "低",
+   "req": "四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "地方要求",
+   "polname": "河南省电动汽车充电基础设施建设运营管理暂行办法",
+   "url": "https://www.henan.gov.cn/2025/09-08/3209668.html"
+  },
+  {
+   "city": "合肥市",
+   "level": "低",
+   "req": "四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "参考国标",
+   "polname": "安徽省新能源汽车充换电基础设施建设运营管理办法",
+   "url": "https://fzggw.ah.gov.cn/public/7011/148994031.html"
+  },
+  {
+   "city": "辽宁省",
+   "level": "低",
+   "req": "一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "参考国标",
+   "polname": "辽宁省“十四五”电动汽车充电基础设施专项规划",
+   "url": "https://www.ln.gov.cn/web/zwgkx/lnsrmzfgb/2022n/zk/zk22/bmwj/59A3E4B0F1D0415C8A8D5CF9AF7AC9ED/index.shtml"
+  },
+  {
+   "city": "沈阳市",
+   "level": "低",
+   "req": "一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "参考国标",
+   "polname": "沈阳市新能源汽车充电基础设施建设运营管理暂行办法",
+   "url": "https://sfj.shenyang.gov.cn/flfggz/gfxwj/202202/P020220214509063125337.pdf"
+  },
+  {
+   "city": "大连市",
+   "level": "低",
+   "req": "一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "参考国标",
+   "polname": "辽宁省“十四五”电动汽车充电基础设施专项规划",
+   "url": "https://www.ln.gov.cn/web/zwgkx/lnsrmzfgb/2022n/zk/zk22/bmwj/59A3E4B0F1D0415C8A8D5CF9AF7AC9ED/index.shtml"
+  },
+  {
+   "city": "昆明市",
+   "level": "低",
+   "req": "一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "参考国标",
+   "polname": "云南省电动汽车充电基础设施建设运营管理暂行办法",
+   "url": "https://www.yn.gov.cn/zwgk/zfgb/2019/2019d21q/sjbmwj/201912/t20191230_186423.html"
+  },
+  {
+   "city": "南昌市",
+   "level": "高",
+   "req": "地下禁止大功率充电站",
+   "cat": "地方要求",
+   "polname": "江西省电动汽车充电设施建设技术标准",
+   "url": "https://zjt.jiangxi.gov.cn/jxszfhcxjst/bzcx/1765719271123120128/bULzGoTi.pdf"
+  },
+  {
+   "city": "贵阳市",
+   "level": "低",
+   "req": "一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "参考国标",
+   "polname": "省加快新能源汽车产业高质量发展推进 “电动贵州” 建设的指导意见",
+   "url": "https://www.guizhou.gov.cn/zwgk/zcfg/szfwj/qfbf/202310/t20231027_82882627.html"
+  },
+  {
+   "city": "南宁市",
+   "level": "低",
+   "req": "一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "参考国标",
+   "polname": "广西电动汽车充电基础设施建设运营管理办法",
+   "url": "http://fgw.gxzf.gov.cn/zfxxgkzl/wjzx/zyzc/zdyj/P020260109615143910158.pdf"
+  },
+  {
+   "city": "海口市",
+   "level": "低",
+   "req": "宜布置在B1，禁止B4及以下",
+   "cat": "地方要求",
+   "polname": "海南省电动汽车充电设施建设技术标准",
+   "url": "https://zjt.hainan.gov.cn/szjt/0410/202203/f5e4b5b17fc54b70bb7f293bb7c0de2f/files/a9f0bf84adb443c7853421b2a0b93aa0.pdf"
+  },
+  {
+   "city": "石家庄市",
+   "level": "中",
+   "req": "充电站不宜设置于地下，如需设置于地下，应采取相应的防火措施。",
+   "cat": "地方要求",
+   "polname": "电动汽车充电站及充电桩建设技术标准",
+   "url": "https://www.soujianzhu.cn/NormAndRules/RulesContent.aspx?id=798"
+  },
+  {
+   "city": "太原市",
+   "level": "低",
+   "req": "一、二、三级充电站充电区严禁设置于所有地下室；\n四级充电站宜设于B1靠近出入口,并满足消防要求；禁止B4及以下；",
+   "cat": "参考国标",
+   "polname": "山西省电动汽车充（换）电基础设施建设运营管理办法",
+   "url": "https://www.shanxi.gov.cn/zfxxgk/zfcbw/zfgb2/2023nzfgb/d6q_76599/szfbgtwj_77853/202305/t20230516_8560553.shtml"
+  }
+ ],
+ "mgmt": [
+  {
+   "city": "国家级",
+   "year": "2023",
+   "status": "现行有效",
+   "title": "国务院办公厅《关于进一步构建高质量充电基础设施体系的指导意见》",
+   "sum": "国家层面充电基础设施体系建设的纲领性文件，各级管理办法的上位依据。",
+   "link": "https://www.gov.cn/zhengce/content/202306/content_6887167.htm"
+  },
+  {
+   "city": "国家级",
+   "year": "2025",
+   "status": "现行有效",
+   "title": "六部门《电动汽车充电设施服务能力三年倍增行动方案（2025—2027年）》",
+   "sum": "发改委、能源局、工信部、住建部、交通部、市场监管总局联合印发。",
+   "link": "https://www.ndrc.gov.cn/xxgk/jd/jd/202510/t20251015_1401015.html"
+  },
+  {
+   "city": "国家级",
+   "year": "2026",
+   "status": "现行有效",
+   "title": "《新型电力系统建设十五五规划》充电目标",
+   "sum": "2030年充电桩超4000万个、大功率约30万个，支撑超1.1亿辆电车。",
+   "link": "https://www.gov.cn/zhengce/202608/content_7077537.htm"
+  },
+  {
+   "city": "国家级",
+   "year": "2024",
+   "status": "现行有效",
+   "title": "财政部等《县域充换电设施补短板试点通知》财建〔2024〕57号",
+   "sum": "聚焦县域补短板，推动充换电设施向县乡覆盖。",
+   "link": "https://www.gov.cn/zhengce/zhengceku/202404/content_6945040.htm"
+  },
+  {
+   "city": "国家级",
+   "year": "2025",
+   "status": "现行有效",
+   "title": "发改委《促进大功率充电设施科学规划建设》发改办能源〔2025〕632号",
+   "sum": "鼓励场站10年以上租赁期限，电网加强大功率充电用电保障。",
+   "link": "https://www.zgdlxh.com/page121.html?article_id=2357&pagenum=2"
+  },
+  {
+   "city": "国家级",
+   "year": "2026",
+   "status": "现行有效",
+   "title": "五部门2026年新能源汽车下乡活动",
+   "sum": "乡村换购可申领以旧换新补贴，推动光储充、车网互动下乡。",
+   "link": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_addcc0a2fd3f4bf6993e3e48f7b8d4c3.html"
+  },
+  {
+   "city": "国家级",
+   "year": "2026",
+   "status": "现行有效",
+   "title": "电动汽车供电设备CCC强制认证（8月1日起）",
+   "sum": "交流/直流桩、随车充电装置纳入CCC强制认证，配套GB 39752/44263。",
+   "link": "https://finance.eastmoney.com/a/202608013829030617.html"
+  },
+  {
+   "city": "浙江",
+   "year": "2024",
+   "status": "现行有效",
+   "title": "浙江省《新能源汽车充换电基础设施建设运营管理办法》浙发改能源〔2024〕243号",
+   "sum": "省级充换电设施建设运营框架性文件。",
+   "link": "https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"
+  },
+  {
+   "city": "江苏",
+   "year": "2022",
+   "status": "现行有效",
+   "title": "江苏省《新能源汽车充换电设施建设运营管理办法》苏工信规〔2022〕2号",
+   "sum": "既有车位安装充电桩按一般电气设备管理，可不办理项目备案。",
+   "link": "https://www.jiangsu.gov.cn/art/2022/3/31/art_64797_10399100.html"
+  },
+  {
+   "city": "山东",
+   "year": "2016+2023",
+   "status": "现行有效",
+   "title": "山东省《电动汽车充电设施建设运营管理办法》+ 2023年加强规范实施意见",
+   "sum": "2016年印发管理办法（鲁发改能源〔2016〕1182号），2023年省能源局配套出台《关于进一步加强和规范山东省电动汽车充电基础设施建设运营管理的实施意见》，现行有效。",
+   "link": "http://www.shandong.gov.cn/art/2023/7/25/art_123000_30408.html"
+  },
+  {
+   "city": "河南",
+   "year": "2025",
+   "status": "现行有效",
+   "title": "河南省《电动汽车充电基础设施建设运营管理暂行办法》豫政办〔2025〕43号",
+   "sum": "2025年9月印发，现行有效。",
+   "link": "https://www.henan.gov.cn/2025/09-08/3209668.html"
+  },
+  {
+   "city": "湖南",
+   "year": "2025",
+   "status": "现行有效",
+   "title": "湖南省《电动汽车充换电基础设施建设与运营管理办法》湘发改能源规〔2025〕289号",
+   "sum": "时效至2030-05-27，现行有效。",
+   "link": "https://fgw.hunan.gov.cn/fgw/xxgk_70899/zcfg/dfxfg/202506/t20250603_33689945.html"
+  },
+  {
+   "city": "陕西",
+   "year": "2024",
+   "status": "现行有效",
+   "title": "陕西省《电动汽车充电基础设施建设运营管理办法》陕发改能电力〔2024〕952号",
+   "sum": "2024年12月印发，替代2018版（5年期满）。",
+   "link": "https://www.shaanxi.gov.cn/zfxxgk/zfgb/2024/d23q/202412/t20241226_3273739_wap.html"
+  },
+  {
+   "city": "安徽",
+   "year": "2023",
+   "status": "现行有效",
+   "title": "安徽省《新能源汽车充换电基础设施建设运营管理办法（暂行）》皖发改产业规〔2023〕8号",
+   "sum": "2023年12月印发，现行有效。",
+   "link": "https://fzggw.ah.gov.cn/public/7011/148994031.html"
+  },
+  {
+   "city": "河北",
+   "year": "2016",
+   "status": "暂行",
+   "title": "河北省《电动汽车充电基础设施建设运营管理办法（暂行）》冀发改能源〔2016〕539号",
+   "sum": "2016年暂行办法。",
+   "link": "https://hbdrc.hebei.gov.cn/xxgk_2232/zc/wzcwj/202309/t20230907_91838.html"
+  },
+  {
+   "city": "四川",
+   "year": "2023",
+   "status": "现行有效",
+   "title": "四川省《充电基础设施建设运营管理办法》川发改能源规〔2023〕137号",
+   "sum": "2023年印发，成都市2026修订版据此制定。",
+   "link": "https://cdjx.chengdu.gov.cn/cdsjxw/c132905/2026-08/04/content_3711bdd023de4b00adabe509e8e38f87.shtml"
+  },
+  {
+   "city": "广东",
+   "year": "2016",
+   "status": "现行有效",
+   "title": "广东省《电动汽车充电基础设施建设运营管理办法》粤发改能电〔2016〕691号",
+   "sum": "2016年印发，系广东省现行省级充电设施建设运营管理办法（广州2019年通知已失效，省级691号仍现行）。",
+   "link": "https://www.xueshu.com/gdsrmzfgb/201722/30249866.html"
+  },
+  {
+   "city": "福建",
+   "year": "2016",
+   "status": "暂行",
+   "title": "福建省《电动汽车充电基础设施建设运营管理暂行办法》闽政办〔2016〕62号",
+   "sum": "2016年暂行办法，实行备案制管理。",
+   "link": "https://www.fujian.gov.cn/zwgk/zfxxgk/szfwj/jgzz/xzgfxwj/201605/t20160511_1414736.htm"
+  },
+  {
+   "city": "广西",
+   "year": "2026",
+   "status": "现行有效",
+   "title": "广西《电动汽车充电基础设施建设运营管理办法》桂能电力规〔2026〕11号",
+   "sum": "2026年1月印发，替代2016年暂行办法。",
+   "link": "http://fgw.gxzf.gov.cn/zfxxgkzl/fdzdgknr/gfx_wj/t27099957.shtml"
+  },
+  {
+   "city": "北京",
+   "year": "2024",
+   "status": "现行有效",
+   "title": "北京《加快推进新能源汽车超级充电站建设实施方案》京发改〔2024〕1206号",
+   "sum": "超充站建设实施方案。",
+   "link": "https://fgw.beijing.gov.cn/fgwzwgk/2024zcwj/bwqtwj/202408/t20240816_3775804.htm"
+  },
+  {
+   "city": "上海",
+   "year": "2023",
+   "status": "现行有效",
+   "title": "上海《公共停车场（库）充电设施建设管理办法》沪交行规〔2023〕1号",
+   "sum": "2023年2月印发。",
+   "link": "https://jtw.sh.gov.cn/2023ngfxwj/20230215/352f94bfa17e47aa9b17da38e1458261.html"
+  },
+  {
+   "city": "上海",
+   "year": "2023",
+   "status": "现行有效",
+   "title": "上海《居民小区电动汽车充电设施建设管理办法》沪交行规〔2023〕3号",
+   "sum": "2023年4月印发。",
+   "link": "https://www.shanghai.gov.cn/202311bmgfxwj/20230606/92ae82c16383473993a74d9ab32b6e93.html"
+  },
+  {
+   "city": "上海",
+   "year": "2025",
+   "status": "现行有效",
+   "title": "上海《公共领域新能源汽车充换电设施安全管理通知》",
+   "sum": "2026年8月1日起公共充换电设施须通过3C认证。",
+   "link": "https://jtw.sh.gov.cn/zxzfxx/20251202/3396acdbe39744bfadcb5d7a3694ccb8.html"
+  },
+  {
+   "city": "深圳",
+   "year": "2023",
+   "status": "现行有效",
+   "title": "深圳市《新能源汽车充换电设施管理办法》深发改规〔2023〕10号",
+   "sum": "2023年10月印发。",
+   "link": "https://www.sz.gov.cn/zfgb/zcjd/content/post_10907016.html"
+  },
+  {
+   "city": "深圳",
+   "year": "2026",
+   "status": "现行有效",
+   "title": "深圳福田区《新能源汽车充换电设施管理实施细则》",
+   "sum": "2026年5月印发。",
+   "link": "https://sf.sz.gov.cn/gfxwjcx/gfxwjjd/content/post_12812612.html"
+  },
+  {
+   "city": "杭州",
+   "year": "2023",
+   "status": "现行有效",
+   "title": "杭州《推进新能源电动汽车充电基础设施建设运营实施办法（修订）》杭政办函〔2023〕75号",
+   "sum": "2023年12月施行。",
+   "link": "https://www.hangzhou.gov.cn/art/2023/11/16/art_1229063382_1838378.html"
+  },
+  {
+   "city": "武汉",
+   "year": "2021",
+   "status": "暂行",
+   "title": "武汉《新能源汽车充电基础设施建设运营管理暂行办法》",
+   "sum": "2021年印发。",
+   "link": "https://fgw.wuhan.gov.cn/zfxxgk/zfxxgk_1/qtzdgkwj/202109/t20210902_1771228.html"
+  },
+  {
+   "city": "天津",
+   "year": "2026",
+   "status": "现行有效",
+   "title": "天津《新能源汽车充电基础设施建设运营管理办法》",
+   "sum": "2026年印发，新建住宅须100%预留充电条件。",
+   "link": "https://m.d1ev.com/news/zhengce/60360"
+  },
+  {
+   "city": "成都",
+   "year": "2026",
+   "status": "现行有效",
+   "title": "成都《电动汽车充电基础设施建设运营管理办法（2026年修订版）》",
+   "sum": "新建居住区固定车位100%配建，清理僵尸桩。",
+   "link": "https://jxt.sc.gov.cn/scjxt/szgz/2026/8/10/f25670e5505c48519b6cc91344093d72.shtml"
+  },
+  {
+   "city": "重庆",
+   "year": "2026",
+   "status": "现行有效",
+   "title": "重庆《电动汽车充电设施服务能力高质量发展支持政策（2026—2028年）》",
+   "sum": "推动充电从规模建设向高质量发展转型。",
+   "link": "https://jjxxw.cq.gov.cn/zwgk_213/zcjd/tpjd/202607/t20260717_15829786.html"
+  }
+ ],
+ "ba": [
+  {
+   "city": "长沙市",
+   "type": "建设备案",
+   "req": "可建后备案",
+   "status": "新建场站全部备案",
+   "platform": "用湖南省充电基础设施智能服务管理平台（潇湘 e 行）",
+   "risk": "极高",
+   "polname": "湖南省电动汽车充换电基础设施建设与运营管理办法",
+   "url": "https://fgw.hunan.gov.cn/fgw/xxgk_70899/zcfg/dfxfg/202506/t20250603_33689945.html"
+  },
+  {
+   "city": "成都市",
+   "type": "建设备案+投运备案",
+   "req": "建设前建设备案，建设后投运备案",
+   "status": "存量自建站均未备案\n第一个场站使用北京逸安启建设备案完成，投运备案待电站上线后推进",
+   "platform": "成都市新能源汽车及充电基础设施监测监管平台",
+   "risk": "高",
+   "polname": "成都市电动汽车充电基础设施建设运营管理办法",
+   "url": "https://cdjx.chengdu.gov.cn/cdsjxw/c132904/2026-08/04/e972a7233a93456f8850be2003e49ae6/files/ded0be7876e44a52a1905d99fbcb199a.pdf"
+  },
+  {
+   "city": "杭州市",
+   "type": "建设备案",
+   "req": "必须建前备案",
+   "status": "新建站正常备案",
+   "platform": "杭州市新能源汽车充电设施智能化管理系统",
+   "risk": "高",
+   "polname": "杭州市推进新能源电动汽车充电基础设施建设运营实施办法",
+   "url": "https://www.hangzhou.gov.cn/art/2023/11/16/art_1229063382_1838378.html"
+  },
+  {
+   "city": "广州市",
+   "type": "预备案+建设备案",
+   "req": "建前预备案，建后验收，完成备案后投运",
+   "status": "经营性电动汽车充换电设施项目登记工作属于行政备案（而非行政许可）\n地下场站需消防备案及验收，无法满足要求，地下场站均未备案",
+   "platform": "羊城充",
+   "risk": "中高",
+   "polname": "关于明确经营性电动汽车充换电设施项目登记有关问题的通知",
+   "url": "https://gxj.gz.gov.cn/zt/xnyqc/gggs/content/post_10017796.html"
+  },
+  {
+   "city": "西安市",
+   "type": "建设备案",
+   "req": "要求建前备案，实操可后补",
+   "status": "个别场站备案",
+   "platform": "陕西智慧车联网平台",
+   "risk": "中高",
+   "polname": "陕西省电动汽车充电基础设施建设运营管理办法",
+   "url": "https://www.shaanxi.gov.cn/zfxxgk/zfgb/2024/d23q/202412/t20241226_3273739_wap.html"
+  },
+  {
+   "city": "厦门市",
+   "type": "建设备案",
+   "req": "建前备案",
+   "status": "未备案",
+   "platform": "厦门市市级充电设施监管平台",
+   "risk": "中高",
+   "polname": "福建省电动汽车充电基础设施建设运营管理暂行办法",
+   "url": "http://www.fujian.gov.cn/zwgk/zfxxgk/szfwj/fzsj/201605/t20160511_1414736.htm"
+  },
+  {
+   "city": "郑州市",
+   "type": "建设备案",
+   "req": "验收后备案",
+   "status": "未备案",
+   "platform": "郑州市充电基础设施智能服务平台",
+   "risk": "中高",
+   "polname": "郑州市电动汽车充电基础设施建设运营管理暂行办法",
+   "url": "https://public.zhengzhou.gov.cn/D0105Y/9346669.jhtml"
+  },
+  {
+   "city": "温州市",
+   "type": "建设备案",
+   "req": "建前备案",
+   "status": "未备案",
+   "platform": "温州市充电基础设施智能服务平台",
+   "risk": "中高",
+   "polname": "浙江省新能源汽车充（换）电基础设施建设运营管理办法",
+   "url": "https://wzfgw.wenzhou.gov.cn/art/2024/11/15/art_1229558221_2036198.html"
+  },
+  {
+   "city": "东莞市",
+   "type": "建设备案",
+   "req": "建前报备，建后验收，完成备案后投运",
+   "status": "未备案",
+   "platform": "粤易充",
+   "risk": "中高",
+   "polname": "东莞市电动汽车充换电设施建设运营 管理办法",
+   "url": "https://dgdp.dg.gov.cn/007330029/0801/201908/5883166efc124335ac82acfc38958999/files/fc72e03f5cc54db9b521677169837e32.pdf"
+  },
+  {
+   "city": "北京市",
+   "type": "建设备案",
+   "req": "要求建前备案，实操可后补",
+   "status": "地上场站备案可领取建设补贴；\n地下场站未备案；",
+   "platform": "北京市充电设施公共服务管理平台",
+   "risk": "中",
+   "polname": "北京市新能源汽车高质量超级充电站发展行动计划",
+   "url": "https://csglw.beijing.gov.cn/zwxx/2024zcwj/202501/t20250106_3981561.html"
+  },
+  {
+   "city": "重庆市",
+   "type": "建设备案",
+   "req": "要求建前备案，实操可后补",
+   "status": "补备案中",
+   "platform": "重庆市新能源汽车与充电基础设施监测平台（数字捷充平台）",
+   "risk": "中",
+   "polname": "全市公共充换电基础设施建设项目备案指南",
+   "url": "https://jjxxw.cq.gov.cn/zwgk_213/zcwj/qtwj/202311/t20231102_12509012.html"
+  },
+  {
+   "city": "大连市",
+   "type": "建设备案",
+   "req": "建前备案",
+   "status": "未备案",
+   "platform": "辽宁省充换电一张网服务平台",
+   "risk": "中",
+   "polname": "大连市新能源汽车充换电基础设施建设奖补资金管理办法",
+   "url": "https://pc.dl.gov.cn/art/2024/9/10/art_10131_2393823.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiIyNWQxZGQ1NmEzNGE2NDczLTNiNTU3MTYzZDYzZGVmYmUifQ%3D%3D"
+  },
+  {
+   "city": "深圳市",
+   "type": "建设备案",
+   "req": "建前报备，建后验收，完成备案后投运",
+   "status": "未备案",
+   "platform": "深圳市电力充储放一张网平台",
+   "risk": "中低",
+   "polname": "关于进一步规范新能源汽车充换电设施管理",
+   "url": "http://fgw.sz.gov.cn/zwgk/qt/tzgg/content/post_11153387.html"
+  },
+  {
+   "city": "佛山市",
+   "type": "建设备案",
+   "req": "建前报备，建后验收，完成备案后投运",
+   "status": "未备案",
+   "platform": "粤易充",
+   "risk": "中低",
+   "polname": "广东省电动汽车充电基础设施建设\n运营管理办法",
+   "url": "https://file.deepbit.cn/us/202107/xmtsumjqzswwlnkwqszn.pdf"
+  },
+  {
+   "city": "汕头市",
+   "type": "建设备案",
+   "req": "建前报备，建后验收，完成备案后投运",
+   "status": "未备案",
+   "platform": "粤易充",
+   "risk": "中低",
+   "polname": "广东省电动汽车充电基础设施建设\n运营管理办法",
+   "url": "https://file.deepbit.cn/us/202107/xmtsumjqzswwlnkwqszn.pdf"
+  },
+  {
+   "city": "福州市",
+   "type": "建设备案",
+   "req": "既有停车场建设的，无需办理规划、建设和施工许可证，结合新建停车场、公园绿地建设的，纳入主体项目同步报批",
+   "status": "未备案",
+   "platform": "福建省新能源汽车运行监测管理平台（未接入）",
+   "risk": "中低",
+   "polname": "福建省电动汽车充电基础设施建设运营管理暂行办法",
+   "url": "http://www.fujian.gov.cn/zwgk/zfxxgk/szfwj/fzsj/201605/t20160511_1414736.htm"
+  },
+  {
+   "city": "合肥市",
+   "type": "建设备案",
+   "req": "建前备案",
+   "status": "未备案",
+   "platform": "安徽省充换电基础设施综合监管服务平台（未接入）",
+   "risk": "中低",
+   "polname": "安徽省新能源汽车充换电基础设施建设运营管理办法",
+   "url": "https://fzggw.ah.gov.cn/public/7011/148994031.html"
+  },
+  {
+   "city": "贵阳市",
+   "type": "建设备案",
+   "req": "建前备案",
+   "status": "未备案",
+   "platform": "贵州省电动汽车充电设施运营监控与服务平台",
+   "risk": "中低",
+   "polname": "贵州省电动汽车充（换）电基础设施\n建设运营管理办法",
+   "url": "https://nyj.guizhou.gov.cn/xwzx/gsgg/202506/t20250611_88128579.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiIzY2MyOWFmNGIxNGE3N2ViLWM5ZWJhMjFhYmQwOWZhMDcifQ%3D%3D"
+  },
+  {
+   "city": "泉州市",
+   "type": "建设备案",
+   "req": "建前备案",
+   "status": "未备案",
+   "platform": "福建省新能源汽车运行监测管理平台（未接入）",
+   "risk": "中低",
+   "polname": "福建省电动汽车充电基础设施建设运营管理暂行办法",
+   "url": "http://www.fujian.gov.cn/zwgk/zfxxgk/szfwj/fzsj/201605/t20160511_1414736.htm"
+  },
+  {
+   "city": "南宁市",
+   "type": "建设备案",
+   "req": "建前备案",
+   "status": "未备案",
+   "platform": "八桂充",
+   "risk": "中低",
+   "polname": "广西电动汽车充电基础设施建设运营管理办法",
+   "url": "http://fgw.gxzf.gov.cn/zfxxgkzl/wjzx/zyzc/zdyj/P020260109615143910158.pdf"
+  },
+  {
+   "city": "海口市",
+   "type": "建设备案",
+   "req": "建前报备，建后验收完成备案",
+   "status": "未备案",
+   "platform": "海南省一张网平台",
+   "risk": "中低",
+   "polname": "海南省电动汽车充电基础设施验收暂行办法",
+   "url": "https://fg.sanya.gov.cn/fgwsite/tzgg/202507/a61b9d501ea04b6dbb12c8b4776110ff/files/c9bdcb5a173c48ea827da34e16ca642d.pdf"
+  },
+  {
+   "city": "武汉市",
+   "type": "建设备案",
+   "req": "建前报备，建后验收完成备案",
+   "status": "未备案",
+   "platform": "武汉市新能源汽车充电基础设施公共服务平台",
+   "risk": "中低",
+   "polname": "武汉市新能源汽车充电基础设施建设运营管理暂行办法",
+   "url": "https://fgw.wuhan.gov.cn/zfxxgk/zfxxgk_1/qtzdgkwj/202109/t20210902_1771228.html"
+  },
+  {
+   "city": "南昌市",
+   "type": "建设备案",
+   "req": "需备案",
+   "status": "未备案",
+   "platform": "江西省新能源汽车充电基础设施省级监管平台",
+   "risk": "中低",
+   "polname": "",
+   "url": "https://fgw.nc.gov.cn/ncfzggw/xxgkzcwj/201903/8c5d8ba6eacb4642a7f8a496c10c6e03/files/%E5%85%B3%E4%BA%8E%E5%8D%B0%E5%8F%91%E3%80%8A%E6%B1%9F%E8%A5%BF%E7%9C%81%E5%9F%8E%E5%B8%82%E5%85%AC%E5%85%B1%E5%9C%BA%E6%89%80%E5%92%8C%E5%B1%85%E4%BD%8F%EF%BC%88%E5%B0%8F%EF%BC%89%E5%8C%BA%E7%94%B5%E5%8A%A8%E6%B1%BD%E8%BD%A6%E5%85%85%E7%94%B5%E8%AE%BE%E6%96%BD%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95%EF%BC%88%E8%AF%95%E8%A1%8C%EF%BC%89%E3%80%8B%E7%9A%84%E9%80%9A%E7%9F%A5.pdf?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiJmM2JlYmIwZmJkMWQyYWI2LTIxMGRmNWE4Yjg3NTBkZjkifQ%3D%3D"
+  },
+  {
+   "city": "沈阳市",
+   "type": "建设备案",
+   "req": "需备案",
+   "status": "未备案",
+   "platform": "辽宁省新能源汽车监管平台",
+   "risk": "中低",
+   "polname": "关于建立充电桩设施的建议（第0267号）的答复",
+   "url": "https://jxw.shenyang.gov.cn/zwgk/fdzdgknr/jyta/srddbjy/202312/t20231219_4576394.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI0ZTA5NzI5MDRmZmRiNjlkLTNjZjQ3ODQyMGIyMDQ3NTYifQ%3D%3D"
+  },
+  {
+   "city": "太原市",
+   "type": "建设备案",
+   "req": "需备案",
+   "status": "未备案",
+   "platform": "山西省充（换）电基础设施监管服务平台",
+   "risk": "中低",
+   "polname": "",
+   "url": "https://ty.sxzwfw.gov.cn/icity/project/taiyuan/default/public/assets/upload/%E5%A4%AA%E5%8E%9F%E5%B8%82%E7%94%B5%E5%8A%A8%E6%B1%BD%E8%BD%A6%E5%85%85%EF%BC%88%E6%8D%A2%EF%BC%89%E7%94%B5%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E5%BB%BA%E8%AE%BE%E9%A1%B9%E7%9B%AE%E5%AE%A1%E6%89%B9%E6%9C%8D%E5%8A%A1%E6%8C%87%E5%BC%95.pdf?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiJhNGQxMmNiNjg4NDlkOGMzLTE3OGJkMTMxZTZhMGIyYjkifQ%3D%3D"
+  },
+  {
+   "city": "天津市",
+   "type": "建设备案",
+   "req": "需备案",
+   "status": "未备案",
+   "platform": "天津市新能源汽车充电基础设施综合服务平台（津 e 充）",
+   "risk": "中低",
+   "polname": "天津市进一步构建高质量充电基础设施体系的实施方案",
+   "url": "https://fzgg.tj.gov.cn/zwgk_47325/zcfg_47338/zcwjx/fgwj/202309/t20230919_6410457.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiJiYjc4MjNlNTk0ODA5ZDFmLWQ1OTM3ZTUwNDYzZmJkYTYifQ%3D%3D"
+  },
+  {
+   "city": "嘉兴市",
+   "type": "建设备案",
+   "req": "开工前备案",
+   "status": "未备案",
+   "platform": "浙里充",
+   "risk": "中低",
+   "polname": "浙江省新能源汽车充（换）电基础设施建设运营管理办法",
+   "url": "https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"
+  },
+  {
+   "city": "金华市",
+   "type": "建设备案",
+   "req": "开工前备案",
+   "status": "未备案",
+   "platform": "浙里充",
+   "risk": "中低",
+   "polname": "浙江省新能源汽车充（换）电基础设施建设运营管理办法",
+   "url": "https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"
+  },
+  {
+   "city": "宁波市",
+   "type": "建设备案",
+   "req": "开工前备案",
+   "status": "未备案",
+   "platform": "浙里充",
+   "risk": "中低",
+   "polname": "浙江省新能源汽车充（换）电基础设施建设运营管理办法",
+   "url": "https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"
+  },
+  {
+   "city": "绍兴市",
+   "type": "建设备案",
+   "req": "开工前备案",
+   "status": "未备案",
+   "platform": "绍兴市充电基础设施智能服务平台",
+   "risk": "中低",
+   "polname": "浙江省新能源汽车充（换）电基础设施建设运营管理办法",
+   "url": "https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"
+  },
+  {
+   "city": "台州市",
+   "type": "建设备案",
+   "req": "开工前备案",
+   "status": "未备案",
+   "platform": "浙里充",
+   "risk": "中低",
+   "polname": "浙江省新能源汽车充（换）电基础设施建设运营管理办法",
+   "url": "https://fzggw.zj.gov.cn/art/2024/9/23/art_1229123351_2529919.html"
+  },
+  {
+   "city": "青岛市",
+   "type": "建设备案",
+   "req": "竣工验收备案",
+   "status": "未备案",
+   "platform": "齐鲁 e 充",
+   "risk": "中低",
+   "polname": "关于进一步加强和规范我省电动汽车 \n充电基础设施建设运营管理的实施意见",
+   "url": "http://nyj.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=a3966efdf0be4e0ebef44f3f584055d2.pdf"
+  },
+  {
+   "city": "济南市",
+   "type": "建设备案",
+   "req": "竣工验收备案",
+   "status": "未备案",
+   "platform": "齐鲁 e 充",
+   "risk": "中低",
+   "polname": "关于进一步加强和规范我省电动汽车 \n充电基础设施建设运营管理的实施意见",
+   "url": "http://nyj.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=a3966efdf0be4e0ebef44f3f584055d2.pdf"
+  },
+  {
+   "city": "南京市",
+   "type": "建设备案",
+   "req": "既有车位安装充电桩，按一般电气设备安装管理，可不办理备案",
+   "status": "未备案",
+   "platform": "江苏省新能源汽车充电设施运营监测服务平台",
+   "risk": "低",
+   "polname": "江苏省新能源汽车充（换）电\n设施建设运营管理办法",
+   "url": "https://www.jiangsu.gov.cn/art/2022/3/31/art_64797_10399100.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI3M2JjODUxNzYwNTNkYjU5LTc4NTg5ODNmZjU2NzMzZjgifQ%3D%3D"
+  },
+  {
+   "city": "常州市",
+   "type": "建设备案",
+   "req": "既有车位安装充电桩，按一般电气设备安装管理，可不办理备案",
+   "status": "未备案",
+   "platform": "江苏省新能源汽车充电设施运营监测服务平台",
+   "risk": "低",
+   "polname": "江苏省新能源汽车充（换）电\n设施建设运营管理办法",
+   "url": "https://www.jiangsu.gov.cn/art/2022/3/31/art_64797_10399100.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI3M2JjODUxNzYwNTNkYjU5LTc4NTg5ODNmZjU2NzMzZjgifQ%3D%3D"
+  },
+  {
+   "city": "南通市",
+   "type": "建设备案",
+   "req": "既有车位安装充电桩，按一般电气设备安装管理，可不办理备案",
+   "status": "未备案",
+   "platform": "江苏省新能源汽车充电设施运营监测服务平台",
+   "risk": "低",
+   "polname": "江苏省新能源汽车充（换）电\n设施建设运营管理办法",
+   "url": "https://www.jiangsu.gov.cn/art/2022/3/31/art_64797_10399100.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI3M2JjODUxNzYwNTNkYjU5LTc4NTg5ODNmZjU2NzMzZjgifQ%3D%3D"
+  },
+  {
+   "city": "苏州市",
+   "type": "建设备案",
+   "req": "既有车位安装充电桩，按一般电气设备安装管理，可不办理备案",
+   "status": "未备案",
+   "platform": "江苏省新能源汽车充电设施运营监测服务平台",
+   "risk": "低",
+   "polname": "江苏省新能源汽车充（换）电\n设施建设运营管理办法",
+   "url": "https://www.jiangsu.gov.cn/art/2022/3/31/art_64797_10399100.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI3M2JjODUxNzYwNTNkYjU5LTc4NTg5ODNmZjU2NzMzZjgifQ%3D%3D"
+  },
+  {
+   "city": "无锡市",
+   "type": "建设备案",
+   "req": "既有车位安装充电桩，按一般电气设备安装管理，可不办理备案",
+   "status": "未备案",
+   "platform": "江苏省新能源汽车充电设施运营监测服务平台",
+   "risk": "低",
+   "polname": "江苏省新能源汽车充（换）电\n设施建设运营管理办法",
+   "url": "https://www.jiangsu.gov.cn/art/2022/3/31/art_64797_10399100.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI3M2JjODUxNzYwNTNkYjU5LTc4NTg5ODNmZjU2NzMzZjgifQ%3D%3D"
+  },
+  {
+   "city": "昆明市",
+   "type": "建设备案",
+   "req": "独立占地的集中式充换电站建设项目实行备案制\n充电基础设施运营商实行备案管理",
+   "status": "未备案",
+   "platform": "昆明市新能源汽车运营信息管理及服务平台（春城 e 路行）",
+   "risk": "低",
+   "polname": "云南省电动汽车充电基础设施建设运营管理暂行办法",
+   "url": "https://www.yn.gov.cn/zwgk/zfgb/2019/2019d21q/sjbmwj/201912/t20191230_186423.html?f_link_type=f_linkinlinenote&flow_extra=eyJpbmxpbmVfZGlzcGxheV9wb3NpdGlvbiI6MCwiZG9jX3Bvc2l0aW9uIjowLCJkb2NfaWQiOiI3OTU5Yzc3ZGYwNTUzYTUwLTg3ODliMDA0ZmNkZTM2MzAifQ%3D%3D"
+  },
+  {
+   "city": "上海市",
+   "type": "运营备案",
+   "req": "建后备案",
+   "status": "全量计入监管平台，可申领运营补贴",
+   "platform": "上海充换电设施公共数据采集与监测市级平台",
+   "risk": "无",
+   "polname": "关于本市进一步推动充换电基础设施建设的实施意见",
+   "url": "https://www.shanghai.gov.cn/xnysj/20250610/ed23a7c382c1498abc0656b768cefd9e.html"
+  }
+ ],
+ "daily": [
+  {
+   "date": "2026-08-16",
+   "src": "网易·青杉杂谈",
+   "title": "多地开始清理小区私装充电桩，规范私桩安装审批",
+   "sum": "近期多地集中清理不合规私装充电桩，针对人防车位不可安装、线路未经物业和电力部门审批私自拉线等行为开展整治，消除火灾隐患，规范小区私桩安装审批流程。",
+   "link": "https://www.163.com/dy/article/L4E6MC140553TANT.html"
+  },
+  {
+   "date": "2026-08-15",
+   "src": "人民日报",
+   "title": "截至6月底全国电动汽车充电基础设施总数达2305.7万个，同比增长43.2%",
+   "sum": "国家能源局数据显示，截至2026年6月底，我国电动汽车充电基础设施（枪）总数达2305.7万个，同比增长43.2%，其中公共充电设施500.9万个，额定总功率2.47亿千瓦。",
+   "link": "http://jx.people.com.cn/BIG5/n2/2026/0815/c186330-41668575.html"
+  },
+  {
+   "date": "2026-08-15",
+   "src": "重庆新闻网",
+   "title": "重庆铜梁开展电动汽车充电桩计量监督检查",
+   "sum": "铜梁区市场监管局针对商业综合体、公共停车场等充电设施集中区域开展充电桩计量监督检查，核查在用充电桩是否通过法定计量检定、是否在检定有效期内、强检封印是否完好，并查阅运营企业资质。",
+   "link": "http://www.cqnews.net/app/content_1537903412603248640.html"
+  },
+  {
+   "date": "2026-08-15",
+   "src": "吉林日报",
+   "title": "2026年吉林省新能源汽车下乡活动启动，同步推进县域充换电基础设施建设",
+   "sum": "8月15日活动在长春农博园启动，主题“绿色、低碳、智能、安全——智行千县万镇，绿惠乡村万家”，同步推进全省汽车以旧换新、县域充换电基础设施建设等重点任务，加快新能源汽车在县乡普及。",
+   "link": "http://jlrbszb.dajilin.com/pc/paper/c/202608/16/content_1060022.html"
+  },
+  {
+   "date": "2026-08-14",
+   "src": "新浪汽车",
+   "title": "800V超快充技术普及，充电桩3C认证本月正式实施",
+   "sum": "2026年头部车企将充电时间压缩至10分钟内，充电桩强制3C认证于8月正式实施，800V超快充进入实用化普及阶段。",
+   "link": "https://auto.sina.cn/2026-08-14/detail-ininffec3155635.d.html"
+  },
+  {
+   "date": "2026-08-14",
+   "src": "兰州日报",
+   "title": "兰州规范充电桩市场，新购新装充电桩须具备CCC认证",
+   "sum": "根据市场监管总局2024年第50号公告，8月1日起电动汽车供电设备实施强制性产品认证管理。兰州规范全市充电桩生产、销售、安装及使用，新购新装充电桩须具备CCC认证。",
+   "link": "https://gansu.gansudaily.com.cn/system/2026/08/14/031417174.shtml"
+  },
+  {
+   "date": "2026-08-14",
+   "src": "人民日报/市场监管总局",
+   "title": "市场监管总局强化民生计量监管，上半年检查充电桩运营单位超1.1万家",
+   "sum": "市场监管总局聚焦电动汽车充电设施等重点民生计量器具强化计量监管，严查计量作弊、器具失准、监管缺位等问题。今年1-6月全国监督检查充电桩运营单位11164家。",
+   "link": "http://sc.people.com.cn/BIG5/n2/2026/0813/c345167-41666964.html"
+  },
+  {
+   "date": "2026-08-14",
+   "src": "宝鸡市场监管",
+   "title": "宝鸡市市场监管局高新分局开展充电桩计量执法检查",
+   "sum": "为规范新能源汽车充电桩计量设备使用，宝鸡市市场监管局高新分局开展充电桩执法检查，摸清辖区经营户底数、建立经营者台账，重点核查计量准确性，维护市场公平。",
+   "link": "https://m.thepaper.cn/newsDetail_forward_33784487"
+  },
+  {
+   "date": "2026-08-14",
+   "src": "中新网山西",
+   "title": "山西曲沃开展充电桩专项安全隐患排查整治",
+   "sum": "高温雷雨天气多发，充电桩长期户外暴晒、高负荷运行易出现设备隐患，国网山西电力临汾曲沃党员服务队开展充电桩专项安全隐患排查整治行动，以精准运维保障绿色出行。",
+   "link": "https://www.sx.chinanews.com/news/2026/0814/250650.html"
+  },
+  {
+   "date": "2026-08-13",
+   "src": "住建部/中国政府采购报",
+   "title": "住建部就《电动汽车充换电设施项目规范（征求意见稿）》公开征求意见",
+   "sum": "住建部办公厅印发通知，就工程建设强制性国家规范《电动汽车充换电设施项目规范（征求意见稿）》面向全社会公开征集意见，反馈截至2026年8月31日，明确优化选址、安全可靠、经济合理等建设总原则。",
+   "link": "https://m.sohu.com/a/1062389785_122014422/"
+  },
+  {
+   "date": "2026-08-13",
+   "src": "新华日报",
+   "title": "汽车充电桩持证上岗：CCC认证8月1日起强制实施",
+   "sum": "电动汽车供电设备强制性产品认证8月1日起强制实施，未获CCC认证的充电桩不得出厂、销售、进口或使用，行业从推荐性国标转向强制约束。",
+   "link": "http://finance.sina.cn/2026-08-13/detail-ininchpe0259877.d.html"
+  },
+  {
+   "date": "2026-08-13",
+   "src": "中国质量新闻网",
+   "title": "黑龙江双鸭山发布充电桩CCC认证强制实施提醒告诫",
+   "sum": "依据市场监管总局2024年第50号公告，2026年8月1日起电动汽车供电设备正式实施强制性产品认证，双鸭山市市场监管局提醒各充电桩生产、销售、运营使用经营单位落实CCC认证。",
+   "link": "https://m.cqn.com.cn/ms/content/2026-08/13/content_9168512.htm"
+  },
+  {
+   "date": "2026-08-10",
+   "src": "四川省经信厅",
+   "title": "成都施行新版充电设施管理办法，智能化改造、有序退出僵尸桩",
+   "sum": "新建居住区固定车位100%配建；新建设施须具备智能有序充电、异常检测、远程控制；连续6个月无电量的僵尸桩整改或拆除。",
+   "link": "https://jxt.sc.gov.cn/scjxt/szgz/2026/8/10/f25670e5505c48519b6cc91344093d72.shtml"
+  },
+  {
+   "date": "2026-08-10",
+   "src": "辽阳市财政局",
+   "title": "辽阳市两县区入选2026年国家级县域充换电设施补短板试点名单",
+   "sum": "财政部、工信部、交通运输部联合公布2026年县域充换电设施补短板试点县名单，全国59个联合试点县入选，辽阳县-太子河区试点上榜，实施期2026至2028年，获中央补助资金3960万元。",
+   "link": "http://czj.liaoyang.gov.cn/govxxgk/LYCZJ/2026-08-10/8802fc14-8eba-4dab-8e30-cbcde46995e1.html"
+  },
+  {
+   "date": "2026-08-08",
+   "src": "澎湃新闻",
+   "title": "国家发改委、能源局印发《新型电力系统建设十五五规划》",
+   "sum": "提出2030年充电基础设施总量超4000万个、大功率约30万个，支撑超1.1亿辆电车，构建城市面状、公路线状、乡村点状布局。",
+   "link": "https://m.thepaper.cn/newsDetail_forward_33745190"
+  },
+  {
+   "date": "2026-08-06",
+   "src": "黔西南州能源局",
+   "title": "黔西南州关于电动汽车充电设施运营企业备案的通知",
+   "sum": "依据贵州省充电基础设施建设运营管理办法（暂行），对贵州海纳畅通新能源科技有限责任公司充电设施运营商备案申请予以备案。",
+   "link": "https://www.qxn.gov.cn/zwgk/zfjg/znyj_5135318/bmxxgkml_5135321/bmgg_5135326/202608/t20260806_90709359.html"
+  },
+  {
+   "date": "2026-08-04",
+   "src": "成都市经信局",
+   "title": "成都印发《电动汽车充电基础设施建设运营管理办法（2026年修订版）》",
+   "sum": "市经信局会同发改、住建、应急等5部门印发，规范充电基础设施规划、建设、运营及监督管理，促进行业高质量发展。",
+   "link": "https://cdjx.chengdu.gov.cn/cdsjxw/c132904/2026-08/04/content_e972a7233a93456f8850be2003e49ae6.shtml"
+  },
+  {
+   "date": "2026-08-02",
+   "src": "有驾",
+   "title": "8月1日起两项汽车新规落地：充电桩安装与维修新规",
+   "sum": "8月1日正式落地的两项汽车新规，针对维修乱收费与充电桩安装难，影响全国超4500万辆新能源车保有量。",
+   "link": "https://youjia-pc.bdstatic.com/article/9690974055562557356.html"
+  },
+  {
+   "date": "2026-08-01",
+   "src": "东方财富网",
+   "title": "8月1日起，电动汽车充电桩CCC强制认证全面落地",
+   "sum": "依据市场监管总局2024年第50号公告，电动汽车供电设备纳入CCC强制认证，配套国标GB 39752-2024、GB 44263-2024同步落地。",
+   "link": "https://finance.eastmoney.com/a/202608013829030617.html"
+  },
+  {
+   "date": "2026-07-30",
+   "src": "兴仁市能源局",
+   "title": "兴仁市对辖区公共充电站开展安全巡查",
+   "sum": "围绕设备运行安全、消防设施配备、安全警示标识张贴等开展日常安全巡查，听取企业汇报、查阅资料、现场查看桩体。",
+   "link": "https://www.gzxr.gov.cn/zfbm/snyj/gzdt_5930934/202607/t20260730_90678052.html"
+  },
+  {
+   "date": "2026-07-30",
+   "src": "咸阳新闻网",
+   "title": "兴平检察：给充电桩体检，开展充电设施专项监督排查",
+   "sum": "兴平市检察院对辖区小区、公共充电点位全覆盖实地核查，发现消防器材不足、线路杂乱等共性隐患，以检察公益诉讼履职。",
+   "link": "https://m.sxxynews.com.cn/2026/0730/452053.html"
+  },
+  {
+   "date": "2026-07-29",
+   "src": "福州市发改委",
+   "title": "福州持续开展能源领域大排查，专项检查充电场站安全",
+   "sum": "核查充电桩接地系统、消防设施、电缆绝缘性能及运维台账，现场测试多台充电桩急停装置，组织协会及安全专家联合检查。",
+   "link": "https://fgw.fuzhou.gov.cn/fgwzwgk/tpxw/202607/t20260729_5351713.htm"
+  },
+  {
+   "date": "2026-07-23",
+   "src": "望城区发改局",
+   "title": "长沙望城区开展充电桩基础设施安全生产专项排查",
+   "sum": "对辖区150余家充电站开展充电桩基础设施安全生产专项排查整治，重点排查设备本体安全，防范火灾风险。",
+   "link": "http://www.wangcheng.gov.cn/xxgk_343/qzfxxgkml/qtzfxxgk_131516/gkmlgzdt/gkmubmdt/202607/t20260723_12508750.html"
+  },
+  {
+   "date": "2026-07-17",
+   "src": "重庆市经信委",
+   "title": "重庆发布充电设施服务能力高质量发展支持政策图解",
+   "sum": "《重庆市电动汽车充电设施服务能力高质量发展支持政策（2026—2028年）》，推动充电从规模建设向高质量发展转型。",
+   "link": "https://jjxxw.cq.gov.cn/zwgk_213/zcjd/tpjd/202607/t20260717_15829786.html"
+  },
+  {
+   "date": "2026-07-13",
+   "src": "杭州市建委",
+   "title": "杭州发布新能源货车大功率充电设施奖补办法解读",
+   "sum": "《杭州市新能源货车大功率充电设施奖补资金管理办法（2026—2028年）》，对大功率充电设施给予奖补，有效期三年。",
+   "link": "https://cxjw.hangzhou.gov.cn/col/col1229486201/art/2026/art_03df648b0a9c4876ad3c3aa6a61d69af.html"
+  },
+  {
+   "date": "2026-07-13",
+   "src": "东安县自然资源局",
+   "title": "湖南《充换电基础设施新建/改扩建投资项目备案管理通知》解读",
+   "sum": "省发改委出台湘发改能源规〔2026〕378号，明确充换电基础设施新建或改扩建投资项目备案管理事项。",
+   "link": "http://gtj.da.gov.cn/da/yhzcjdurk/202607/da305e95049c41ccb85a3c2dc694c964.shtml"
+  },
+  {
+   "date": "2026-07-01",
+   "src": "琼海市发改委",
+   "title": "琼海市2026年充换电基础设施验收及补贴申报公告",
+   "sum": "组织2026年充换电设施验收及补贴申报，体现先建设、后验收、再申报的补贴流程。",
+   "link": "https://qionghai.hainan.gov.cn/ywdt/zwdt/bmgz/202607/t20260703_4104163.html"
+  },
+  {
+   "date": "2026-06-18",
+   "src": "工信部",
+   "title": "五部门组织开展2026年新能源汽车下乡活动",
+   "sum": "乡村换购新能源车可申领以旧换新补贴，推动智能网联、新型充换电、光储充一体化、车网互动技术在乡村应用。",
+   "link": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_addcc0a2fd3f4bf6993e3e48f7b8d4c3.html"
+  },
+  {
+   "date": "2026-03-13",
+   "src": "广东省财政厅",
+   "title": "三部门启动2026年县域充换电设施补短板试点申报（59县）",
+   "sum": "财政部、工信部、交通运输部联合印发财办建〔2026〕8号，计划全国支持59个联合试点县，补齐农村公共充换电设施短板。",
+   "link": "https://czt.gd.gov.cn/czxw/content/post_4867133.html"
+  },
+  {
+   "date": "2026-01-09",
+   "src": "广西发改委",
+   "title": "广西印发《电动汽车充电基础设施建设运营管理办法》",
+   "sum": "桂能电力规〔2026〕11号，2026年1月印发，替代2016年暂行办法；新建居住区固定车位全部建设或预留充电条件。",
+   "link": "http://fgw.gxzf.gov.cn/zfxxgkzl/fdzdgknr/gfx_wj/t27099957.shtml"
+  }
+ ]
+};
 let curTab="sub", kw="";
 const EMPTY=document.getElementById("empty");
 function uniq(arr){return["全部",...new Set(arr.filter(Boolean).sort())]}
