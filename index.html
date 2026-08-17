@@ -81,18 +81,21 @@ footer a{color:var(--accent);text-decoration:none}
 
 <div class="panel active" id="p-sub">
 <div class="fbar">城市<select id="c-sub" onchange="render('sub')"></select>
+<div class="seg" id="lv-sub" data-tab="sub"><span class="on" data-v="">全部</span><span data-v="省">省</span><span data-v="市">市</span></div>
 <div class="seg" id="g-sub" data-key="level"><span class="on" data-v="">全部</span><span data-v="低">低</span><span data-v="中">中</span><span data-v="高">高</span></div>
 <span class="cnt" id="n-sub"></span></div>
 <div id="l-sub"></div></div>
 
 <div class="panel" id="p-mgmt">
 <div class="fbar">城市<select id="c-mgmt" onchange="render('mgmt')"></select>
+<div class="seg" id="lv-mgmt" data-tab="mgmt"><span class="on" data-v="">全部</span><span data-v="省">省</span><span data-v="市">市</span></div>
 <div class="seg" id="g-mgmt" data-key="status"><span class="on" data-v="">全部</span><span data-v="现行有效">现行有效</span><span data-v="暂行">暂行</span></div>
 <span class="cnt" id="n-mgmt"></span></div>
 <div id="l-mgmt"></div></div>
 
 <div class="panel" id="p-ba">
 <div class="fbar">城市<select id="c-ba" onchange="render('ba')"></select>
+<div class="seg" id="lv-ba" data-tab="ba"><span class="on" data-v="">全部</span><span data-v="省">省</span><span data-v="市">市</span></div>
 <div class="seg" id="g-ba" data-key="risk"><span class="on" data-v="">全部</span><span data-v="极高">极高</span><span data-v="高">高</span><span data-v="中高">中高</span><span data-v="中">中</span><span data-v="中低">中低</span><span data-v="低">低</span><span data-v="无">无</span></div>
 <span class="cnt" id="n-ba"></span></div>
 <div id="l-ba"></div></div>
@@ -1422,18 +1425,29 @@ document.querySelectorAll(".seg").forEach(seg=>{
   seg.addEventListener("click",e=>{
     const s=e.target.closest("span");if(!s)return;
     seg.querySelectorAll("span").forEach(x=>x.classList.remove("on"));
-    s.classList.add("on");render(seg.id.replace("g-",""));
+    s.classList.add("on");render(seg.dataset.tab||seg.id.replace("g-",""));
   });
 });
 const LMAP={"\u4f4e":"b-low","\u4e2d":"b-mid","\u9ad8":"b-high"};
 const RMAP={"\u6781\u9ad8":"b-vhigh","\u9ad8":"b-high","\u4e2d\u9ad8":"b-mm","\u4e2d":"b-mid","\u4e2d\u4f4e":"b-mlow","\u4f4e":"b-low","\u65e0":"b-none"};
 const SMAP={"\u73b0\u884c\u6709\u6548":"b-valid","\u6682\u884c":"b-temp"};
+function lvlOf(city){
+  city=String(city||"");
+  if(city==="全国"||city==="国家级")return "省";
+  if(/(省|自治区)$/.test(city))return "省";
+  if(/市/.test(city))return "市";
+  if(["浙江","江苏","山东","河南","湖南","陕西","安徽","河北","四川","广东","福建","广西","辽宁","吉林","黑龙江","江西","湖北","山西","云南","贵州","甘肃","青海","海南","西藏","内蒙古","新疆","宁夏"].includes(city))return "省";
+  return "市";
+}
 function filter(tab){
   let d=DATA[tab];
   if(tab!=="daily"){const city=document.getElementById("c-"+tab).value;
   const seg=document.getElementById("g-"+tab);let kv="";
   if(seg){const on=seg.querySelector("span.on");if(on)kv=on.dataset.v}
+  const lv=document.getElementById("lv-"+tab);let lvv="";
+  if(lv){const on=lv.querySelector("span.on");if(on)lvv=on.dataset.v}
   if(city&&city!=="全部")d=d.filter(i=>i.city===city);
+  if(lvv)d=d.filter(i=>lvlOf(i.city)===lvv);
   if(kv)d=d.filter(i=>(seg.dataset.key==="level"?i.level:i[seg.dataset.key])===kv);}
   if(kw){const k=kw.toLowerCase();d=d.filter(i=>JSON.stringify(i).toLowerCase().includes(k))}
   return d;
